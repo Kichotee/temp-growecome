@@ -1,4 +1,107 @@
 /** @type {import('tailwindcss').Config} */
+const colors = require("tailwindcss/colors");
+
+const PRIMARY = {
+  primary:  "#2E2067",
+  secondary: "#9333EA",
+  tertiary: "#4F3954",
+};
+
+const NEUTRAL = {
+  black: "#191D24",
+  white: "#FFFFFF",
+  border: "#C9CFD9",
+  bg: "#FAFAFA",
+  commonBg: "#F9FAFB",
+  bodyText: "#64728C",
+  sideBar: "#0F2657",
+  greyBg: "#F9FAFB",
+};
+
+const ERROR = {
+  150: "#910D2C",
+  critical: "#DA1414",
+  100: "#EF476F",
+  50: "#FBD0DA",
+};
+
+const WARNING = {
+  150: "#996B00",
+  100: "#FFD166",
+  50: "#FFF0CC",
+};
+
+const TINT = {
+  250: "#82CAF2",
+  200: "#B1DEF7",
+  150: "#DFF1FC",
+  100: "#E8F5FD",
+  50: "#F1F9FE",
+};
+
+const SUCCESS = {
+  500: "#039855",
+  150: "#027A48",
+  100: "#0EAD69",
+  50: "#ECFDF3",
+};
+const SHADE = {
+  250: "#06293C",
+  200: "#0B486A",
+  150: "#106898",
+  100: "#1587C6",
+  50: "#26A3E8",
+};
+
+const GREY = {
+  100: "#8A8A8A",
+  200: "#101828",
+};
+
+const BORDER = {
+  primary: "#CDCED9",
+  secondary: "#CDCED9",
+};
+const TEXT = {
+  main: "#2E2C34",
+  sub: "#52525B",
+  blue: "#3B2A82",
+  misc:"#2E2067",
+  offWhite: "#EBE7EF",
+};
+
+const palette = {
+  brand: {
+    ...PRIMARY,
+  },
+  success: {
+    ...SUCCESS,
+  },
+  text: {
+    ...TEXT,
+  },
+  shade: {
+    ...SHADE,
+  },
+  tint: {
+    ...TINT,
+  },
+  warning: {
+    ...WARNING,
+  },
+  grey: {
+    ...GREY,
+  },
+  error: {
+    ...ERROR,
+  },
+  neutral: {
+    ...NEUTRAL,
+  },
+  border: {
+    ...BORDER,
+  },
+};
 
 module.exports = {
   content: [
@@ -136,37 +239,10 @@ module.exports = {
       200: '2',
     },
     caretColor: ({ theme }) => theme('colors'),
-    colors: ({ colors }) => ({
-      inherit: colors.inherit,
-      current: colors.current,
-      transparent: colors.transparent,
-      black: colors.black,
-      white: colors.white,
-      slate: colors.slate,
-      gray: colors.gray,
-      zinc: colors.zinc,
-      neutral: colors.neutral,
-      stone: colors.stone,
-      red: colors.red,
-      orange: colors.orange,
-      amber: colors.amber,
-      yellow: colors.yellow,
-      lime: colors.lime,
-      green: colors.green,
-      emerald: colors.emerald,
-      teal: colors.teal,
-      cyan: colors.cyan,
-      sky: colors.sky,
-      blue: colors.blue,
-      indigo: colors.indigo,
-      violet: colors.violet,
-      purple: colors.purple,
-      fuchsia: colors.fuchsia,
-      pink: colors.pink,
-      rose: colors.rose,
-      
-
-    }),
+    colors: {
+      ...colors,
+      ...palette,
+    },
     columns: {
       auto: 'auto',
       1: '1',
@@ -309,7 +385,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Inter',
+        'Manrope',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',
@@ -335,6 +411,9 @@ module.exports = {
         '"Liberation Mono"',
         '"Courier New"',
         'monospace',
+      ],
+      baloo:[
+        'Baloo Bhai 2', "cursive"
       ],
     },
     fontSize: {

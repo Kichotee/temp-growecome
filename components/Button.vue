@@ -1,15 +1,14 @@
 <template>
-    <div :class="type" class="">
-       <slot>
+  <div :class="type" class="cursor-pointer">
+    <slot>
 
-       </slot>
-    </div>
+    </slot>
+  </div>
 </template>
 
 <script setup lang="ts">
-const props = defineProps<{
-  level: 1 | 2|3;
-}>();
+// import computed from "vue";
+const props = defineProps<{level: 1 | 2 | 3}>();
 const type = computed(() => {
   switch (props.level) {
     case 1:
@@ -20,12 +19,10 @@ const type = computed(() => {
       return "flex flex-row rounded-xl lg:py-3  items-center  ";
 
     default:
-        return "flex flex-col items-center ";
-      break;
+      return "flex flex-col items-center ";
+    
   }
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

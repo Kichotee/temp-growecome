@@ -1,137 +1,53 @@
-<template>
-  <div
-    class="lg:h-[61rem] h-[28rem] bg-[#F0F3F9] overflow-hidden w-full relative"
-  >
-    <Flex :level="2" class="lg:mt-24 mt-4">
-      <div class="w-[90%] mx-auto lg:w-3/4 lg:h-1/2 h-full">
-        <Flex :level="2" class="py-4 gap-4 lg:items-center">
-          <h2 class="mb-2 text-3xl font-bold text-black">
-            Are you an investor
+<template >
+  <div class=" max-w-screen max-h-[53rem] overflow-hidden bg-brand-primary">
+    <div class="px-[7.5rem]">
+
+      <div class="container mx-auto relative pt-[5.78rem]">
+        <div class="flex flex-col font-baloo text-white items-center">
+
+          <h2 class="text-[3.5rem] font-medium">
+            Why <span class="font-bold">Growecom?</span>
           </h2>
-          <h3 class="text-[#1e1e1e]/90 text-center lg:text-left text-xl">
-            Are you an investor interested in The Super App For Everything?
-            Contact us now <span>
-              <a target="_blank" href="https://wa.link/hnx1mz">
-
-                <img class="inline ml-1 mb-1" src="/images/Whatsapp-black.png" alt="">
-              </a>
-            </span>
-          </h3>
-          <div class="lg:h-1/2 h-4/5 w-full">
-            <Flex :level="1" class="lg:w-[80%] hidden lg:flex mx-auto py-4">
-              <div
-                class="basis-1/3 flex flex-col justify-center gap-6 items-center h-full"
-              >
-                <img src="/images/House.png" class="w-1/3" alt="" />
-                <div class="flex flex-col h-1/3">
-                  <h3 class="text-xl text-gray-900 font-semibold">Location</h3>
-                  <p class="text-gray-600 text-sm">Dubai, UAE</p>
-                </div>
-              </div>
-              <div
-                class="basis-1/3 gap-6 flex flex-col justify-center items-center h-full"
-              >
-                <img src="/images/Message.png" class="w-1/3" alt="" />
-                <div class="flex flex-col h-1/3">
-                  <div class="flex flex-col items-center h-1/3">
-                    <h3 class="text-xl font-semibold">Email Address</h3>
-                    <p class="text-gray-600 text-sm">
-                      AlphaWorld@AlphaTech7.com
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="basis-1/3 gap-6 flex flex-col justify-center items-center h-full"
-              >
-                <img src="/images/Phone.png" class="w-1/3" alt="" />
-
-                <div class="flex flex-col h-1/3">
-                  <h3 class="text-xl font-semibold">Phone Number</h3>
-                  <p class="text-gray-600 text-sm">+971 58 555 7797</p>
-                </div>
-              </div>
-            </Flex>
-            <!-- mobile -->
-            <div
-              
-              class="lg:hidden flex flex-col w-full h-full items-start justify-start mx-auto py-4"
-            >
-              <div
-                class="basis-1/3 flex flex-row justify-start gap-4 items-start h-full"
-              >
-                <img src="/images/House.png" class="w-[4rem]" alt="" />
-                <div class="flex flex-col h-1/3">
-                  <h3 class="text-xl text-gray-900 font-semibold">Location</h3>
-                  <p class="text-gray-600 text-sm">Dubai, UAE</p>
-                </div>
-              </div>
-              <div
-                class="basis-1/3 gap-4 flex flex-row justify-start items-start h-full"
-              >
-                <img src="/images/Message.png" class="w-[4rem]" alt="" />
-                <div class="flex flex-col h-1/3">
-                  <div class="flex flex-col items-start h-1/3">
-                    <h3 class="text-xl font-semibold">Email Address</h3>
-                    <p class="text-gray-600 text-sm">
-                      AlphaWorld@AlphaTech7.com
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div
-                class="basis-1/3 gap-4 flex flex-row justify-center items-start h-full"
-              >
-                <img src="/images/Phone.png" class="w-[4rem]" alt="" />
-
-                <div class="flex flex-col items-start h-1/3">
-                  <h3 class="text-xl font-semibold">Phone Number</h3>
-                  <p class="text-gray-600 text-sm">+971 58 555 7797</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </Flex>
-        <div
-          class="mt-12 w-full hidden lg:flex text-[#1E1E1EE5]/90 mx-auto gap-6 h-full flex-col items-center"
-        >
-          <p class="text-lg">Or contact us on all our social media Platforms</p>
-          <div class="flex w-1/4 justify-between mx-auto">
-            <img src="/images/Facebook.png" alt="" />
-            <a target="_blank" href="https://chat.whatsapp.com/Iz4YdJb4wko9s6lhM81858">
-
-              <img src="/images/Whatsapp-black.png" alt="" />
-            </a>
-            <a target="_blank" href="">
-
-              <img src="/images/Instagram-black.png" alt="" />
-            </a>
-            <a href="">
-
-              <img src="/images/Twitter.png" alt="" />
-            </a>
-            <a href="">
-
-              <img src="/images/LinkedIn.png" alt="" />
-            </a>
-          </div>
+          <svg xmlns="http://www.w3.org/2000/svg" width="427" height="12" viewBox="0 0 427 12" fill="none">
+            <path d="M1 9C34.5952 -1.8418 374.799 4.43703 426 9" stroke="url(#paint0_linear_151059_6027)"
+              stroke-width="5" />
+            <defs>
+              <linearGradient id="paint0_linear_151059_6027" x1="213.5" y1="3" x2="213.5" y2="9"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9333EA" />
+                <stop offset="1" stop-color="#CE6697" />
+              </linearGradient>
+            </defs>
+          </svg>
         </div>
+       
       </div>
 
-      <img
-        src="/images/Abstract.png"
-        class="hidden lg:block absolute bottom-8 mt-12 w-[6rem]"
-        alt=""
-      />
-    </Flex>
-    <img
-      src="/images/Alpha-bg.png"
-      class="absolute w-[46.3rem] -left-6 -bottom-1/3 lg:-bottom-0 z-[1000]"
-      alt=""
-    />
+    </div>
+    <div class="">
+      <img src="/images/ellipse.png " class="w-screen " alt="">
+    </div>
   </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+const items=[
+  {
+    icon:`<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <g clip-path="url(#clip0_151058_5956)">
+              <path d="M24 10.6667V8H21.3333V5.33333C21.3312 4.62674 21.0496 3.94969 20.55 3.45005C20.0503 2.95041 19.3733 2.66878 18.6667 2.66667H16V0H13.3333V2.66667H10.6667V0H8V2.66667H5.33333C4.62674 2.66878 3.94969 2.95041 3.45005 3.45005C2.95041 3.94969 2.66878 4.62674 2.66667 5.33333V8H0V10.6667H2.66667V13.3333H0V16H2.66667V18.6667C2.66878 19.3733 2.95041 20.0503 3.45005 20.55C3.94969 21.0496 4.62674 21.3312 5.33333 21.3333H8V24H10.6667V21.3333H13.3333V24H16V21.3333H18.6667C19.3733 21.3312 20.0503 21.0496 20.55 20.55C21.0496 20.0503 21.3312 19.3733 21.3333 18.6667V16H24V13.3333H21.3333V10.6667H24ZM18.6667 18.6667H5.33333V5.33333H18.6667V18.6667Z" fill="white"/>
+              <path d="M11.1938 7H9.5125L7 17H8.28375L8.86375 14.6562H11.7587L12.3238 17H13.6512L11.1938 7ZM9.0325 13.655L10.305 8.1875H10.3625L11.5912 13.655H9.0325ZM14.7975 7H16.0475V17H14.7975V7Z" fill="white"/>
+            </g>
+            <defs>
+              <clipPath id="clip0_151058_5956">
+                <rect width="24" height="24" fill="white"/>
+              </clipPath>
+            </defs>
+          </svg>`,
+    title:"Programmed A.I.",
+    text:"Our technology is learning and adapting to  provide the latest concepts with the goal of boosting conversions."
+  }
+]
+</script>
 
 <style scoped></style>

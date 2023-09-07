@@ -1,19 +1,23 @@
 <template>
-    <div class="w-screen overflow-x-hidden">
+    <div class=" overflow-x-hidden">
+    
 
-        <Navbar></Navbar>
-        <SectionsHeader/>
-        <SectionsConnect/>
-        <SectionsGridPage/>
-        <SectionsInfo/>
-        <SectionsMerch/>
-        <SectionsInvestor/>
-        <SectionsFooter/>
+            <SectionsHero/>
+            <SectionsClientele/>
+            
+            <SectionsGridPage/>
+            <SectionsInfo/>
+            <!-- 
+            <SectionsMerch/>
+            <SectionsInvestor/>  -->
+    
+       
+       
     </div>
 </template>
 
 <script setup lang="ts">
-
+// definePageMeta({layout:false})
 </script>
 
 <style scoped>
