@@ -412,8 +412,9 @@ module.exports = {
         '"Courier New"',
         'monospace',
       ],
-      baloo:[
-        'Baloo Bhai 2', "cursive"
+      inter:["Inter","Arial",'ui-sans-serif',],
+      sec:[
+        '"Baloo Bhai 2"', '"sans-serif"'
       ],
     },
     fontSize: {

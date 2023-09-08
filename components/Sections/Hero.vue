@@ -17,8 +17,8 @@
           <div class=""></div>
         </div>
         <div class="flex flex-col gap-4  text-white items-center">
-          <div class="mt-[6.19rem] flex  font-baloo justify-center">
-            <p class="text-[4rem] font-semibold font-baloo text-white max-w-[56rem] text-center leading-[118.2%]">
+          <div class="mt-[6.19rem] flex  font-['Baloo_Bhai_2'] justify-center">
+            <p class="text-[4rem] font-semibold font-['Baloo_Bhai_2']  text-white max-w-[56rem] text-center leading-[118.2%]">
               Unlock E-commerce Success with
               <span class="bg-clip-text bg-gradient-to-r from-[#722AE6] text-transparent to-[#E4B5CB]">
                 AI-Powered Creativity

@@ -7,9 +7,10 @@
             
             <SectionsGridPage/>
             <SectionsInfo/>
-            <!-- 
+            <SectionsInvestor/> 
+            
             <SectionsMerch/>
-            <SectionsInvestor/>  -->
+        
     
        
        

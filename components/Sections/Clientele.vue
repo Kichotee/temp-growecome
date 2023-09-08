@@ -42,7 +42,7 @@
       <div class="mt-[4.06rem]">
         <div class="grid gap-x-[1.8rem] gap-y-10 grid-cols-2 2xl:justify-start 2xl:grid-cols-3">
           <div v-for="item in items" class="justify-center" :key="item.text">
-            <div class="relative">
+            <div class="relative hover:scale-90 duration-300">
               <img src="/images/rectangle.png" class="max-w-[23rem]" alt="">
               <div class="absolute top-6 flex px-[1.39rem] flex-col">
                 <div

@@ -3,7 +3,7 @@
     <div class="px-[7.5rem] relative z-40">
 
       <div class="container mx-auto flex flex-col items-center relative pt-[5.78rem]">
-        <div class="flex flex-col font-baloo text-white items-center">
+        <div class="flex flex-col font-['Baloo_Bhai_2']  text-white items-center">
 
           <h2 class="text-[3.5rem] font-medium">
             Why <span class="font-bold">Growecom?</span>
@@ -23,7 +23,7 @@
         <div class="grid grid-cols-3 gap-x-10 gap-y-14">
           <div v-for="item in items" :key="item.title">
             <div
-              class="bg-white hover:scale-90 duration-200 cursor-pointer min-w-[23rem] min-h-[13rem] max-h-[13rem] pt-[3.75rem] pl-[1.88rem] mt-[5.08rem] pr-[1.19rem] relative rounded-[1.25rem]  text-text-blue">
+              class="bg-white hover:scale-90 duration-300 cursor-pointer min-w-[23rem] min-h-[13rem] max-h-[13rem] pt-[3.75rem] pl-[1.88rem] mt-[5.08rem] pr-[1.19rem] relative rounded-[1.25rem]  text-text-blue">
               <div class="p-2  flex rounded-lg -top-8  bg-[#E2E8F0] shadow-sm absolute">
                 <div class="p-3 bg-brand-primary">
 
@@ -32,7 +32,7 @@
                   </i>
                 </div>
               </div>
-              <p class="text-text-blue font-semibold text-[1.5rem] font-baloo">
+              <p class="text-text-blue font-semibold text-[1.5rem] font-['Baloo_Bhai_2'] ">
                 {{ item.title }}
               </p>
               <p class="text-base text-text-sub max-[20.62rem]">{{ item.text }}</p>
