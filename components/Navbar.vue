@@ -7,7 +7,7 @@
             <LazyLogo />
             <div class="flex  gap-5 basis-1/3 text-text-sub bg-br">
                 <div v-for="item in links" :key="item.name">
-                    <NuxtLink :to="item.link">
+                    <NuxtLink active-class="font-bold text-text-blue" :to="item.link">
 
                         {{ item.name }}
                     </NuxtLink>
