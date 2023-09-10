@@ -1,10 +1,10 @@
 <template>
-  <div class="md:-translate-y-[15rem]  margin text-[2rem] ">
+  <div class="md:-translate-y-[15rem] pb-8 md:pb-[5rem] margin  ">
     <div class="container mx-auto">
 
       <div class="flex flex-col gap-[2.5rem]">
-        <h2 class=" text-center font-semibold text-text-blue"> Built for Everyone</h2>
-        <marquee behavior="left" direction="left">
+        <h2 class=" text-center font-semibold mt-0text-[1.75rem] mt-8 md: md:text-[2rem] text-text-blue"> Built for Everyone</h2>
+        <marquee class="text-sm md:text-[1.5rem]" behavior="left" direction="left">
           <ul class="flex gap-6 ">
             <li>Students</li>
             <li>Blogger</li>
@@ -17,12 +17,12 @@
         </marquee>
       </div>
       <div class="mt-[3rem] md:mt-[7.5rem]">
-        <p class="text-[1.25rem] md:text-[2.5rem] text-[#2E2067] text-center md:text-left flex gap-4 font-semibold">
-        <p class="text-center md:text-left">
+        <p class="text-[0.9rem] md:text-[2.5rem] text-[#2E2067] text-center md:text-left flex gap-4 font-semibold">
+        <p class="text-center text-[1.5rem]  md:text-left">
 
           Harness the
         </p>
-        <span class="flex flex-col items-center text-center md:text-left md:items-start">
+        <span class="flex flex-col text-[1.5rem]  items-center text-center md:text-left md:items-start">
           Power of Artificial Intelligence.
           <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="527" height="16" viewBox="0 0 527 16" fill="none">
             <path d="M1.5 12.638C43.0543 -3.00883 463.318 2.82913 526.5 12.638" stroke="url(#paint0_linear_151058_5769)"
@@ -47,20 +47,21 @@
         <div class="grid gap-x-[1.8rem] w-full  gap-y-10  2xl:justify-start 2xl:grid-cols-3">
           <div v-for="item in items" class="justify-center" :key="item.text">
             <div class="relative hover:scale-90 duration-300">
-              <img src="/images/rectangle.png" class="max-w-[clamp(18rem,23rem,28rem)]" alt="">
+              <img src="/images/rectangle.png" class="max-w-[100%] md:max-w-[23rem]" alt="">
               <div class="absolute top-6 flex px-[1.39rem] flex-col">
                 <div
                   class="bg-gradient-to-r  max-w-[3.43rem] max-h-[3.43rem] rounded-lg flex justify-center from-[#9333EA] py-2 px-2 to-[#CE6697]">
 
                   <i class="mx-auto" v-html="item.icon"></i>
                 </div>
-                <div class="flex-col gap-5 flex">
+                <div class="flex-col gap-3 md:gap-5 flex">
 
 
-                  <p class="text-[1.5rem] md:text-[2rem] text-text-blue mt-5 md:mt-[2.87rem] font-semibold leading-[150.2%]">
+                  <p
+                    class="text-[1.5rem] md:text-[2rem] text-text-blue mt-5 md:mt-[2.87rem] font-semibold leading-[150.2%]">
                     {{ item.title }}
                   </p>
-                  <p class="text-sm max-w-[20.4375rem]">
+                  <p class="text-[0.675rem]  md:text-[1.5rem] max-w-[14rem] md:max-w-[20.4375rem]">
                     {{ item.text }}
                   </p>
                   <div class=" text-base items-center !flex flex-row gap-2 font-semibold  text-brand-secondary">

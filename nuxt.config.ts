@@ -29,6 +29,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ["nuxt-swiper"],
-  plugins: ["~/plugins/Carousel.ts"],
+
 });

@@ -53,7 +53,7 @@
             Experience the future of advertising as artificial intelligence generates high-converting ad creatives
             effortlessly. Boost your e-commerce growth with Growecom's AI magic.
           </p>
-          <Button class="mt-[0.88rem] bg-brand-secondary w-[20%] py-3 rounded-[0.625rem]">
+          <Button class="mt-[0.88rem] bg-brand-secondary w-[clamp(20%,20%,50%)]  py-3 rounded-[0.625rem]">
             Register
           </Button>
         </div>

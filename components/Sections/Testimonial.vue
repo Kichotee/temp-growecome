@@ -4,10 +4,10 @@
         <div class="margin">
             <div class="container mx-auto text-white">
                 <div class="text-center flex flex-col items-center">
-                    <h2 class="text-[2.5rem] font-semibold leading-[132.2%] font-['Baloo_Bhai_2'] text-white">
+                    <h2 class="text-[1.75rem] md:text-[2.5rem] font-bold md:font-semibold leading-[132.2%] font-['Baloo_Bhai_2'] text-white">
                         Trusted by thousands of customers
                     </h2>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="427" height="12" viewBox="0 0 427 12" fill="none">
+                    <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="427" height="12" viewBox="0 0 427 12" fill="none">
                         <path d="M1 9C34.5952 -1.8418 374.799 4.43703 426 9" stroke="url(#paint0_linear_151059_8171)"
                             stroke-width="5" />
                         <defs>
@@ -18,7 +18,7 @@
                             </linearGradient>
                         </defs>
                     </svg>
-                    <p class="text-lg mt-[0.62rem]">
+                    <p class="md:text-lg mt-[0.62rem]">
                         Thousands of marketers, agencies, and entrepreneurs choose Growecom to automate and simplify their
                         advertisement game
                     </p>
@@ -26,7 +26,7 @@
                 <div class="pt-[5.9rem]">
                     <div class="grid w-full gap-[1.94rem] md:grid-cols-3">
                         <div class="bg-[#581C87] border px-8 pt-[2.38rem] pb-[3.08rem] flex flex-col gap-[1.68rem] border-[#3B2A82] rounded-[.625rem]" v-for="item in testimonialData" :key="item.author">
-                            <div class=" flex flex-col basis-2/3">
+                            <div class=" flex flex-col text-sm md:text-base basis-2/3">
                                 <blockquote>
                                     {{ item.text }}
                                 </blockquote>
@@ -34,10 +34,10 @@
                             <div class="flex  gap-[0.62rem]">
                                 <img :src="item.imgUrl" class="max-w-[3.625rem]" alt="">
                                 <div class="">
-                                    <p class="font-['Baloo_Bhai_2'] text-[1.5rem]">
+                                    <p class="font-['Baloo_Bhai_2'] md:text-[1.5rem]">
                                         {{ item.author }}
                                     </p>
-                                    <p class="text-sm">
+                                    <p class="text-xs md:text-sm">
                                         {{ item.role }}
                                     </p>
                                 </div>

@@ -6,10 +6,10 @@
         <div class="flex flex-col font-['Baloo_Bhai_2']  text-white w-full items-start">
           <div class="">
 
-            <h2 class="text-[2.5rem] text-left font-semibold font-['Baloo_Bhai_2'] ">
+            <h2 class="text-[1.5rem] md:text-[2.5rem] text-left font-semibold font-['Baloo_Bhai_2'] ">
               Discover our pricing plans
             </h2>
-            <svg xmlns="http://www.w3.org/2000/svg" width="427" height="12" viewBox="0 0 427 12" fill="none">
+            <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="427" height="12" viewBox="0 0 427 12" fill="none">
               <path d="M1 9C34.5952 -1.8418 374.799 4.43703 426 9" stroke="url(#paint0_linear_151059_6052)"
                 stroke-width="5" />
               <defs>
@@ -20,7 +20,7 @@
                 </linearGradient>
               </defs>
             </svg>
-            <p class="pt-[0.19rem] text-[1.25rem]">
+            <p class="pt-[0.19rem] text-sm md:text-[1.25rem]">
               Pick a plan to grow your brand and business
             </p>
           </div>
