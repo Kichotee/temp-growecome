@@ -17,14 +17,14 @@
         </marquee>
       </div>
       <div class="mt-[3rem] md:mt-[7.5rem]">
-        <p class="text-[0.9rem] md:text-[2.5rem] text-[#2E2067] text-center md:text-left flex gap-4 font-semibold">
-        <p class="text-center text-[1.5rem]  md:text-left">
+        <div class="text-[0.9rem] !md:text-[2.5rem] text-[#2E2067] text-center md:text-left !flex gap-1 md:gap-4 font-semibold">
+        <p class="text-center text-[0.9rem] md:text-[2.5em]  md:text-left">
 
           Harness the
         </p>
-        <span class="flex flex-col text-[1.5rem]  items-center text-center md:text-left md:items-start">
+        <span class=" flex-col text-[0.9rem] md:text-[2.5em] inline items-center text-center md:text-left md:items-start">
           Power of Artificial Intelligence.
-          <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="527" height="16" viewBox="0 0 527 16" fill="none">
+          <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="527" height="16" viewBox="0 0 527 16" fill="none">
             <path d="M1.5 12.638C43.0543 -3.00883 463.318 2.82913 526.5 12.638" stroke="url(#paint0_linear_151058_5769)"
               stroke-width="5" />
             <defs>
@@ -36,7 +36,7 @@
             </defs>
           </svg>
         </span>
-        </p>
+      </div>
         <p class="text-text-sub text-center md:text-left max-w-[63rem] text-[0.875rem] md:text-[1.25rem] leading-normal">
           In 2023, virtually everything in Digital Marketing is optimized by Artificial Intelligence, except for
           creatives.
@@ -61,7 +61,7 @@
                     class="text-[1.5rem] md:text-[2rem] text-text-blue mt-5 md:mt-[2.87rem] font-semibold leading-[150.2%]">
                     {{ item.title }}
                   </p>
-                  <p class="text-[0.675rem]  md:text-[1.5rem] max-w-[14rem] md:max-w-[20.4375rem]">
+                  <p class="text-[0.675rem]  md:text-base max-w-[14rem] md:max-w-[20.4375rem]">
                     {{ item.text }}
                   </p>
                   <div class=" text-base items-center !flex flex-row gap-2 font-semibold  text-brand-secondary">
