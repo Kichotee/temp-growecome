@@ -18,7 +18,6 @@ export default defineNuxtConfig({
           rel: "icon",
           href: "/Favicon.ico",
         },
-       
       ],
     },
   },
