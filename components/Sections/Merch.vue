@@ -1,8 +1,8 @@
 <template>
-  <div class="w-full px-[7.5rem] pt-[9.5rem] relative  bg-white">
+  <div class="w-full margin pb-[6.2rem] pt-[9.5rem] relative  bg-white">
     <div class="container mx-auto">
 
-      <div class="flex justify-between">
+      <div class="flex  flex-wrap justify-between">
         <div class="">
           <div class="flex text-text-blue flex-col font-['Baloo_Bhai_2']  text-[2.5rem] leading-[132.2%] font-semibold">
             <p>
@@ -37,9 +37,9 @@
 
             <div
               class="  lg:min-w-[48rem] flex flex-col gap-4 lg:max-w-[48.1rem] !lg:rounded-0 rounded-2xl overflow-clip mx-auto">
-              <div v-for="item, index in accordionData" :key="item.title" class="px-[1.9rem]">
+              <div v-for="item, index in accordionData" :key="item.title" class="lg:px-[1.9rem]">
                 <div
-                  class="bg-[#FAF5FF] md:duration:300 rounded-xl duration-500 ease-linear lg:px-[2.58rem] px-8 py-[2.24rem]"
+                  class="bg-[#FAF5FF] md:duration:300 rounded-xl duration-500 ease-linear lg:px-[2.58rem] px-4 py-[2.24rem]"
                   :class="[accordionState === index && '']">
                   <div class="flex flex-col lg:flex-col md:flex-row items-center gap-6 ">
                     <div class="basis-4/5 text-text-blue flex w-full flex-row justify-between items-center">

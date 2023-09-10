@@ -1,10 +1,10 @@
 <template >
-  <div class=" max-w-screen max-h-[53rem] overflow-hidden bg-brand-primary">
-    <div class="px-[7.5rem]">
+  <div class=" max-w-screen  overflow-hidden bg-brand-primary">
+    <div class="margin">
 
       <div class="container mx-auto relative pt-[3.44rem]">
-        <div class="flex justify-between g">
-          <div class="rounded-[3.125rem] border  text-white px-2 items-center flex gap-4 py-3">
+        <div class="flex flex-wrap justify-center gap-8 md:justify-between g">
+          <div class="rounded-[3.125rem] border text-sm md:text-base text-white px-2 items-center flex gap-4 py-3">
             <span>*</span>
             <p>
 
@@ -15,7 +15,7 @@
             </div>
           </div>
           <div class="flex bg-white px-4 items-center py-2 h-max rounded-md gap-2">
-            <div class="">
+            <div class="text-sm md:text-base">
               English
             </div>
             <svg xmlns="http://www.w3.org/2000/svg" width="27" height="20" viewBox="0 0 27 20" fill="none">
@@ -40,9 +40,9 @@
           </div>
         </div>
         <div class="flex flex-col gap-4  text-white items-center">
-          <div class="mt-[6.19rem] flex  font-['Baloo_Bhai_2'] justify-center">
+          <div class="mt-[3rem] md:mt-[6.19rem] flex  font-['Baloo_Bhai_2'] justify-center">
             <p
-              class="text-[4rem] font-semibold font-['Baloo_Bhai_2']  text-white max-w-[56rem] text-center leading-[118.2%]">
+              class="text-2xl md:text-[4rem] font-semibold font-['Baloo_Bhai_2']  text-white max-w-[56rem] text-center leading-[118.2%]">
               Unlock E-commerce Success with
               <span class="bg-clip-text bg-gradient-to-r from-[#722AE6] text-transparent to-[#E4B5CB]">
                 AI-Powered Creativity
@@ -64,7 +64,7 @@
       <img src="/images/ellipse.png " class="w-screen " alt="">
     </div>
   </div>
-  <div class=" w-[41rem] mx-auto  -translate-y-[18rem]">
+  <div class=" w-[41rem] mx-auto hidden md:block -translate-y-[18rem]">
     <img src="/images/hero_img.png" alt="">
   </div></template>
 

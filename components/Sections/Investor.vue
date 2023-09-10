@@ -1,6 +1,6 @@
 <template >
-  <div class=" max-w-screen relative overflow-hidden z-30 pb-[5.19rem] bg-brand-primary">
-    <div class="px-[7.5rem] relative z-40">
+  <div class="  relative overflow-hidden z-30 pb-[5.19rem] bg-brand-primary">
+    <div class="margin relative z-40">
 
       <div class="container mx-auto flex flex-col items-center relative pt-[5.81rem] pb-[7.81rem]">
         <div class="flex flex-col font-['Baloo_Bhai_2']  text-white w-full items-start">
@@ -25,12 +25,12 @@
             </p>
           </div>
         </div>
-        <div class="grid grid-cols-3 w-full mt-[5.94rem] gap-x-10 gap-y-14">
+        <div class="grid md:grid-cols-3 w-full mt-[5.94rem] gap-x-10 gap-y-14">
           <div v-for="item in items" :key="item.tier">
             <div class="border hover:scale-95 duration-300 bg-[#581C87] rounded-[0.63rem] overflow-hidden text-white  ">
-              <div class="py-[1.8rem] px-[2.87rem]">
+              <div class="py-[1.8rem] px-4 md:px-[2.87rem]">
 
-                <p class="font-bold text-[2rem]">
+                <p class="font-bold text-xl md:text-[2rem]">
 
                   {{ item.tier }}
                 </p>
@@ -39,17 +39,17 @@
                 </p>
               </div>
               <hr>
-              <div class="px-[2.87rem]">
+              <div class="px-4 md:px-[2.87rem]">
 
-                <ul class=" mt-[2.69rem] pb-[1.88rem] flex flex-col gap-[0.94rem]">
-                  <li v-for="data in item.title" class="flex  gap-4">
+                <ul class=" mt-4 md:mt-[2.69rem] pb-[1.88rem] flex flex-col gap-2 md:gap-[0.94rem]">
+                  <li v-for="data in item.title" class="flex gap-2 md:gap-4">
                     <div class="px-2 py-2 rounded-full bg-text-blue">
                       <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 12 12" fill="none">
                         <path d="M10.125 3.375L4.875 8.62477L2.25 6" stroke="#FAF5FF" stroke-linecap="round"
                           stroke-linejoin="round" />
                       </svg>
                     </div>
-                    <p>
+                    <p class="text-sm md:text-base">
                       {{ data }}
                     </p>
 
@@ -65,7 +65,7 @@
                   </p>
                   <p>Monthly</p>
                 </div>
-                <Button class="mb-12 text-[1.25rem] py-[0.62rem] font-bold rounded-[0.63rem]" :class="item.tier ==='Enterprise'?'bg-brand-secondary':'bg-brand-primary'">
+                <Button class="mb-6 md:mb-12  md:text-[1.25rem] py-[0.62rem] font-bold rounded-[0.63rem]" :class="item.tier ==='Enterprise'?'bg-brand-secondary':'bg-brand-primary'">
                   Get started
                 </Button>
               </div>
@@ -87,9 +87,7 @@
 
 
     </div>
-    <div class=" absolute z-20  rounded-3xl w-screen min-h-[18rem] bottom-16 bg-[#9351EA45] blur-[100px] filter">
-
-    </div>
+   <BgBlur/>
   </div>
 </template>
 

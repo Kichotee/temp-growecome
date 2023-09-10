@@ -1,11 +1,11 @@
 <template>
     <!-- navbar configuration -->
     <div
-        class="  px-[7.5rem]  bg-white text-white ">
+        class="  margin  bg-white text-white ">
         <div class="container  flex py-4 justify-between font-sans  text-lg items-center w-full mx-auto">
 
             <LazyLogo />
-            <div class="flex  gap-5 basis-1/3 text-text-sub bg-br">
+            <div class="md:flex hidden  gap-5 basis-1/3 text-text-sub bg-br">
                 <div v-for="item in links" :key="item.name">
                     <NuxtLink active-class="font-bold text-text-blue" :to="item.link">
 

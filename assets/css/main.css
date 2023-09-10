@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.margin{
+    @apply px-[2rem] md:px-[7.5rem]
+}

@@ -1,6 +1,6 @@
 <template>
   <footer class=" text-text-blue ">
-    <div class="flex items-start pt-[7.13rem] pl-[7.5rem] pr-[12.5rem] md:justify-between flex-wrap">
+    <div class="flex  items-start md:pt-[7.13rem] lg:pl-[7.5rem]  lg:pr-[12.5rem] md:justify-between flex-wrap">
       <div class="flex items-center gap-2">
         <LazyLogo />
       </div>

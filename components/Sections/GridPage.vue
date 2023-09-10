@@ -1,14 +1,14 @@
 <template >
   <div class=" max-w-screen relative overflow-hidden z-30 pb-[5.19rem] bg-brand-primary">
-    <div class="px-[7.5rem] relative z-40">
+    <div class="margin relative z-40">
 
       <div class="container mx-auto flex flex-col items-center relative pt-[5.78rem]">
         <div class="flex flex-col font-['Baloo_Bhai_2']  text-white items-center">
 
-          <h2 class="text-[3.5rem] font-medium">
+          <h2 class="text-2xl md:text-[3.5rem] font-medium">
             Why <span class="font-bold">Growecom?</span>
           </h2>
-          <svg xmlns="http://www.w3.org/2000/svg" width="427" height="12" viewBox="0 0 427 12" fill="none">
+          <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="427" height="12" viewBox="0 0 427 12" fill="none">
             <path d="M1 9C34.5952 -1.8418 374.799 4.43703 426 9" stroke="url(#paint0_linear_151059_6027)"
               stroke-width="5" />
             <defs>
@@ -20,10 +20,10 @@
             </defs>
           </svg>
         </div>
-        <div class="grid grid-cols-3 gap-x-10 gap-y-14">
+        <div class="grid md:grid-cols-3 gap-x-10 md:gap-y-14">
           <div v-for="item in items" :key="item.title">
             <div
-              class="bg-white hover:scale-90 duration-300 cursor-pointer min-w-[23rem] min-h-[13rem] max-h-[13rem] pt-[3.75rem] pl-[1.88rem] mt-[5.08rem] pr-[1.19rem] relative rounded-[1.25rem]  text-text-blue">
+              class="bg-white hover:scale-90 duration-300 cursor-pointer min-w-[minmax(14rem,23rem)] min-h-[13rem] max-h-[13rem] pt-[3.75rem] pl-[1.88rem] mt-[5.08rem] pr-[1.19rem] relative rounded-[1.25rem]  text-text-blue">
               <div class="p-2  flex rounded-lg -top-8  bg-[#E2E8F0] shadow-sm absolute">
                 <div class="p-3 bg-brand-primary">
 
@@ -32,10 +32,10 @@
                   </i>
                 </div>
               </div>
-              <p class="text-text-blue font-semibold text-[1.5rem] font-['Baloo_Bhai_2'] ">
+              <p class="text-text-blue font-semibold md:text-[1.5rem] font-['Baloo_Bhai_2'] ">
                 {{ item.title }}
               </p>
-              <p class="text-base text-text-sub max-[20.62rem]">{{ item.text }}</p>
+              <p class="text-sm md:text-base text-text-sub max-[20.62rem]">{{ item.text }}</p>
             </div>
           </div>
         </div>
@@ -51,9 +51,7 @@
 
 
     </div>
-    <div class=" absolute z-20  rounded-3xl w-screen min-h-[18rem] bottom-16 bg-[#9351EA45] blur-[100px] filter">
-
-    </div>
+    <BgBlur/>
   </div>
 </template>
 

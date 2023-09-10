@@ -1,11 +1,11 @@
 <template>
-  <div class="px-[7.5rem]">
+  <div class="margin">
     <div class="container mx-auto">
       <div class="pt-[6.69rem]">
         <div class="text-center  text-text-blue">
-          <h2 class="text-[2rem] font-semibold">How IT works?</h2>
+          <h2 class=" md:text-[2rem] font-semibold">How IT works?</h2>
           <p class="flex flex-col items-center">
-            <span class="font-semibold text-[3rem] font-inter"> 
+            <span class="font-semibold text-2xl md:text-[3rem] font-inter"> 
 
               Simple yet smart
             </span>
@@ -24,9 +24,9 @@
         </div>
 
         <div class="pt-[4.31rem] relative flex flex-col ">
-          <div class="flex items-center justify-between">
+          <div class="flex flex-wrap items-center justify-between">
             <div class="flex gap-6">
-              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
+              <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
                 <circle cx="60" cy="60" r="60" fill="#E9D5FF" />
                 <circle cx="60" cy="60" r="30" fill="#9333EA" />
               </svg>
@@ -43,10 +43,10 @@
               </div>
             </div>
             <div class="bg-purple-100 p-8 ">
-              <img src="/images/form.png" class="max-w-[25.3125rem] max-h-[21rem] " alt="">
+              <img src="/images/form.png" class="max-w-[minmax(14rem,25.3125rem)] max-h-[minmax(11rem,21rem)] " alt="">
             </div>
           </div>
-          <div class="absolute left-[3.69rem] top-64 max-h-[25rem] ">
+          <div class="absolute left-[3.69rem]  hidden top-64 max-h-[25rem] ">
 
             <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="474" viewBox="0 0 1180 474" fill="none">
               <path
@@ -55,9 +55,9 @@
                 stroke-dasharray="12 12" />
             </svg>
           </div>
-          <div class="flex mt-[10.69rem] flex-row justify-start items-center gap-6">
+          <div class="flex mt-[10.69rem] flex-wrap-reverse flex-row justify-start items-center gap-6">
             <div class="bg-purple-100 p-8 ">
-              <img src="/images/list.png" class="max-w-[25.3125rem] max-h-[21rem] " alt="">
+              <img src="/images/list.png" class="max-w-[minmax(14rem,25.3125rem)] max-h-[minmax(11rem,21rem)] " alt="">
             </div>
             <div class="flex w-full justify-between">
 
@@ -68,7 +68,7 @@
                 <p class="font-['Baloo_Bhai_2']  text-[2rem] font-semibold text-text-blue">
                   Generate exceptional concepts
                 </p>
-                <p class="w-[26rem] font-inter text-[1.25rem]">
+                <p class="w-[minmax(16rem,26rem)] font-inter text-[1.25rem]">
                   Ignite your creativity and elevate your brand's message with Growecom's ability to generate exceptional
                   and unique concepts that captivate your audience, setting you apart in the world of advertising.
                 </p>

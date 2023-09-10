@@ -1,19 +1,14 @@
 <template>
     <div class=" overflow-x-hidden">
-    
+        <SectionsHero />
+        <SectionsClientele />
 
-            <SectionsHero/>
-            <SectionsClientele/>
-            
-            <SectionsGridPage/>
-            <SectionsInfo/>
-            <SectionsInvestor/> 
-            
-            <SectionsMerch/>
-        
-    
-       
-       
+        <SectionsGridPage />
+        <SectionsInfo />
+        <SectionsInvestor />
+        <SectionsMerch />
+        <SectionsTestimonial />
+
     </div>
 </template>
 
@@ -21,6 +16,4 @@
 // definePageMeta({layout:false})
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>

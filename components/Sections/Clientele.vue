@@ -1,5 +1,5 @@
 <template>
-  <div class="-translate-y-[15rem]  px-[7.5rem] text-[2rem] ">
+  <div class="md:-translate-y-[15rem]  margin text-[2rem] ">
     <div class="container mx-auto">
 
       <div class="flex flex-col gap-[2.5rem]">
@@ -16,34 +16,38 @@
           </ul>
         </marquee>
       </div>
-      <div class="mt-[7.5rem]">
-        <p class="text-[2.5rem] text-[#2E2067] flex gap-4 font-semibold">Harness the
-          <span class="flex flex-col">
-            Power of Artificial Intelligence.
-            <svg xmlns="http://www.w3.org/2000/svg" width="527" height="16" viewBox="0 0 527 16" fill="none">
-              <path d="M1.5 12.638C43.0543 -3.00883 463.318 2.82913 526.5 12.638" stroke="url(#paint0_linear_151058_5769)"
-                stroke-width="5" />
-              <defs>
-                <linearGradient id="paint0_linear_151058_5769" x1="264" y1="2.96973" x2="264" y2="12.638"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#9333EA" />
-                  <stop offset="1" stop-color="#CE6697" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </span>
+      <div class="mt-[3rem] md:mt-[7.5rem]">
+        <p class="text-[1.25rem] md:text-[2.5rem] text-[#2E2067] text-center md:text-left flex gap-4 font-semibold">
+        <p class="text-center md:text-left">
+
+          Harness the
         </p>
-        <p class="text-text-sub max-w-[63rem] text-[1.25rem] leading-normal">
+        <span class="flex flex-col items-center text-center md:text-left md:items-start">
+          Power of Artificial Intelligence.
+          <svg class="hidden" xmlns="http://www.w3.org/2000/svg" width="527" height="16" viewBox="0 0 527 16" fill="none">
+            <path d="M1.5 12.638C43.0543 -3.00883 463.318 2.82913 526.5 12.638" stroke="url(#paint0_linear_151058_5769)"
+              stroke-width="5" />
+            <defs>
+              <linearGradient id="paint0_linear_151058_5769" x1="264" y1="2.96973" x2="264" y2="12.638"
+                gradientUnits="userSpaceOnUse">
+                <stop stop-color="#9333EA" />
+                <stop offset="1" stop-color="#CE6697" />
+              </linearGradient>
+            </defs>
+          </svg>
+        </span>
+        </p>
+        <p class="text-text-sub text-center md:text-left max-w-[63rem] text-[0.875rem] md:text-[1.25rem] leading-normal">
           In 2023, virtually everything in Digital Marketing is optimized by Artificial Intelligence, except for
           creatives.
           Growecom is here to revolutionize that, making data-backed, high-performing ad creatives easily accessible.
         </p>
       </div>
       <div class="mt-[4.06rem]">
-        <div class="grid gap-x-[1.8rem] gap-y-10 grid-cols-2 2xl:justify-start 2xl:grid-cols-3">
+        <div class="grid gap-x-[1.8rem] w-full  gap-y-10  2xl:justify-start 2xl:grid-cols-3">
           <div v-for="item in items" class="justify-center" :key="item.text">
             <div class="relative hover:scale-90 duration-300">
-              <img src="/images/rectangle.png" class="max-w-[23rem]" alt="">
+              <img src="/images/rectangle.png" class="max-w-[clamp(18rem,23rem,28rem)]" alt="">
               <div class="absolute top-6 flex px-[1.39rem] flex-col">
                 <div
                   class="bg-gradient-to-r  max-w-[3.43rem] max-h-[3.43rem] rounded-lg flex justify-center from-[#9333EA] py-2 px-2 to-[#CE6697]">
@@ -53,7 +57,7 @@
                 <div class="flex-col gap-5 flex">
 
 
-                  <p class="text-[2rem] text-text-blue mt-[2.87rem] font-semibold leading-[150.2%]">
+                  <p class="text-[1.5rem] md:text-[2rem] text-text-blue mt-5 md:mt-[2.87rem] font-semibold leading-[150.2%]">
                     {{ item.title }}
                   </p>
                   <p class="text-sm max-w-[20.4375rem]">
