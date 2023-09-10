@@ -47,7 +47,7 @@
         <div class="grid gap-x-[1.8rem] w-full  gap-y-10  2xl:justify-start 2xl:grid-cols-3">
           <div v-for="item in items" class="justify-center" :key="item.text">
             <div class="relative hover:scale-90 duration-300">
-              <img src="/images/rectangle.png" class="max-w-[100%] md:max-w-[23rem]" alt="">
+              <img src="/images/Rectangle.png" class="max-w-[100%] md:max-w-[23rem]" alt="">
               <div class="absolute top-6 flex px-[1.39rem] flex-col">
                 <div
                   class="bg-gradient-to-r  max-w-[3.43rem] max-h-[3.43rem] rounded-lg flex justify-center from-[#9333EA] py-2 px-2 to-[#CE6697]">
