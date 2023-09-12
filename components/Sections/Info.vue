@@ -1,104 +1,88 @@
 <template>
-  <div class="margin">
-    <div class="container mx-auto">
-      <div class="pt-[6.69rem]">
-        <div class="text-center  text-text-blue">
-          <h2 class=" md:text-[2rem] font-semibold">How IT works?</h2>
-          <p class="flex flex-col items-center">
-            <span class="font-semibold text-2xl md:text-[3rem] font-inter"> 
+  <div class="margin px-[8rem]">
+    <div class="container mx-auto pt-[10rem] flex flex-col gap-[6.25rem]">
+      <p class="headings text-center  text-text-misc">Explore how our AI works</p>
+      <div class="flex flex-col relative text-white gap-[15.06rem]">
+        <div v-for="item, index in features" :key="item.text">
+          <div class="flex justify-between items-center">
+            <div class=" max-w-[29rem]">
+              <h2 class="text-text-misc mb-1 font-sec">
+                {{ item.heading }}
+              </h2>
+              <p class="font-sans">
 
-              Simple yet smart
-            </span>
-            <svg xmlns="http://www.w3.org/2000/svg" width="298" height="8" viewBox="0 0 298 8" fill="none">
-              <path d="M1 4.24044C28.2639 0.616154 265.099 6.2939 297 4.24044" stroke="url(#paint0_linear_151059_6039)"
-                stroke-width="5" />
-              <defs>
-                <linearGradient id="paint0_linear_151059_6039" x1="149" y1="3" x2="149" y2="4.70215"
-                  gradientUnits="userSpaceOnUse">
-                  <stop stop-color="#9333EA" />
-                  <stop offset="1" stop-color="#CE6697" />
-                </linearGradient>
-              </defs>
-            </svg>
-          </p>
-        </div>
+                {{ item.text }}
+              </p>
+            </div>
+            <i class="relative bg-black -translate-x-[4.75rem] z-[20]">
 
-        <div class="pt-[4.31rem] relative flex flex-col ">
-          <div class="flex flex-col md:flex-row  items-center justify-between">
-            <div class="flex gap-6">
-              <svg class="hidden md:block" xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
-                <circle cx="60" cy="60" r="60" fill="#E9D5FF" />
-                <circle cx="60" cy="60" r="30" fill="#9333EA" />
+              <svg xmlns="http://www.w3.org/2000/svg" width="104" height="118" viewBox="0 0 104 118" fill="none">
+                <path
+                  d="M47.75 3.18579C50.3799 1.66741 53.6201 1.66741 56.25 3.18579L98.2115 27.4123C100.841 28.9307 102.462 31.7367 102.462 34.7735V83.2265C102.462 86.2633 100.841 89.0693 98.2115 90.5877L56.25 114.814C53.6201 116.333 50.3799 116.333 47.75 114.814L5.78847 90.5877C3.15857 89.0693 1.53848 86.2633 1.53848 83.2265V34.7735C1.53848 31.7367 3.15857 28.9307 5.78848 27.4123L47.75 3.18579Z"
+                  stroke="#9333EA" stroke-width="3" />
               </svg>
-              <div class="flex flex-col gap-4 md:gap-8">
-                <h4 class="text-brand-secondary text-[1.5rem] font-semibold">
-                  Step 1
-                </h4>
-                <p class="font-['Baloo_Bhai_2']  text-[1.25rem]  md:text-[2rem]  font-semibold text-text-blue">
-                  Log in to your account
-                </p>
-                <p class="max-w-[26rem] font-inter text-sm leading-6 md:text-[1.25rem]">
-                  Start by logging in to your Ava account, where you'll have access to our advanced AI-powered tools.
-                </p>
-              </div>
-            </div>
-            <div class="bg-purple-100 p-8 ">
-              <img src="/images/form.png" class="md:max-w-[24.3125rem]  " alt="">
-            </div>
-          </div>
-          <div class="absolute left-[3.69rem]  hidden md:block top-64 max-h-[25rem] ">
+              <p class="text-white font-bold text-4xl absolute left-[36%]  top-1/3">
+                {{ index + 1 }}
+              </p>
 
-            <svg xmlns="http://www.w3.org/2000/svg" width="1180" height="474" viewBox="0 0 1180 474" fill="none">
-              <path
-                d="M1.00003 1V277.824C1.00003 281.138 3.68632 283.824 7.00003 283.824L1173 283.824C1176.31 283.824 1179 286.511 1179 289.824V473"
-                stroke="#133880" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                stroke-dasharray="12 12" />
-            </svg>
-          </div>
-          <div class="flex mt-[4rem] md:mt-[10.69rem] md:flex-row flex-col-reverse justify-start items-center gap-6">
-            <div class="bg-purple-100 p-8 ">
-              <img src="/images/list.png" class="md:max-w-[25.3125rem]" alt="">
-            </div>
-            <div class="flex w-full justify-between">
 
-              <div class="flex flex-col gap-4 md:gap-8">
-                <h4 class=" text-brand-secondary md:text-[1.5rem] font-semibold">
-                  Step 1
-                </h4>
-                <p class="font-['Baloo_Bhai_2'] text-[1.25rem]  md:text-[2rem] font-semibold text-text-blue">
-                  Generate exceptional concepts
-                </p>
-                <p class=" font-inter text-sm md:text-[1.25rem] max-w-[26rem] leading-6">
-                  Ignite your creativity and elevate your brand's message with Growecom's ability to generate exceptional
-                  and unique concepts that captivate your audience, setting you apart in the world of advertising.
-                </p>
-              </div>
-              <svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120" fill="none">
-                <circle cx="60" cy="60" r="60" fill="#E9D5FF" />
-                <circle cx="60" cy="60" r="30" fill="#9333EA" />
-              </svg>
+            </i>
+            <div class="">
+              <img class="max-w-[19.32rem]" :src="item.image" alt="">
             </div>
           </div>
         </div>
-        <div class="flex justify-center mt-[6.05rem] mb-[7.12rem]">
-          <Button
-            class="bg-brand-secondary font-bold text-[1.25rem] w-max  rounded-[0.63rem] flex !flex-row gap-[0.5rem] px-16 py-[0.62rem] text-white">
-            <p>Get Started</p>
-            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12.3565 17.3566L12.3551 17.3581C12.3086 17.405 12.2533 17.4421 12.1924 17.4675C12.1315 17.4929 12.0661 17.506 12.0001 17.506C11.9341 17.506 11.8687 17.4929 11.8078 17.4675C11.7469 17.4421 11.6916 17.405 11.6451 17.3581L11.6422 17.3552C11.5953 17.3087 11.5581 17.2534 11.5328 17.1925C11.5074 17.1315 11.4943 17.0662 11.4943 17.0002C11.4943 16.9342 11.5074 16.8688 11.5328 16.8079C11.5581 16.747 11.5953 16.6917 11.6422 16.6452L11.6431 16.6443L14.9431 13.3543L15.7998 12.5002H14.5901H7.0001C6.8675 12.5002 6.74032 12.4475 6.64655 12.3537C6.55278 12.26 6.5001 12.1328 6.5001 12.0002C6.5001 11.8676 6.55278 11.7404 6.64655 11.6466C6.74032 11.5529 6.8675 11.5002 7.0001 11.5002H14.5901H15.7998L14.9431 10.6461L11.6437 7.35663C11.6436 7.35658 11.6436 7.35653 11.6435 7.35647C11.5491 7.26195 11.496 7.1338 11.496 7.00019C11.496 6.86649 11.5491 6.73827 11.6437 6.64374C11.7382 6.5492 11.8664 6.49609 12.0001 6.49609C12.0663 6.49609 12.1319 6.50913 12.193 6.53447C12.2542 6.5598 12.3097 6.59693 12.3565 6.64374L12.7101 6.29019L12.3566 6.64374L17.352 11.6392C17.3961 11.6861 17.4307 11.741 17.4539 11.8009L17.4538 11.801L17.4576 11.8102C17.5076 11.9319 17.5076 12.0685 17.4576 12.1902L17.4575 12.1901L17.4539 12.1994C17.4307 12.2594 17.3961 12.3143 17.352 12.3612L12.3565 17.3566Z"
-                fill="#9333EA" stroke="white" />
-            </svg>
-          </Button>
+        <div class="absolute left-1/2 h-full flex-col flex justify-between  -translate-x-1/2">
+          <div v-for="item in 4" :key="item" class="basis-1/4 " :class="item === 1 && 'mt-24'">
 
+            <div :class="item === 4 && 'hidden'"
+              class="h-1/2 absolute left-1/2 z-[10]   -mt-1 -translate-1/2 border border-text-misc"></div>
+
+
+            <!-- <img src="/images/line.png" class="w-[0.1875rem] h-[17rem]" alt=""> -->
+
+          </div>
         </div>
       </div>
+
+    </div>
+    <div class="mt-[10rem] text-text-blue bg-[#f1f5f9] px-[7.19rem] min-h-screen rounded-2xl">
+      <p class="text-2xl text-text-blue">
+        Who can use it?
+      </p>
+      <p>
+        Growecom is a game-changer for various domains. Startups, e-commerce ventures, marketing agencies, and enterprises
+        alike can harness its power to streamline operations, optimize marketing efforts, and elevate their brand presence
+        in the digital landscape
+      </p>
+
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-
+const features = [
+  {
+    text: "The power of our platform is gathering creative content from top social and display channels. Access a wealth of inspiration to supercharge your marketing efforts and stay ahead of the competition",
+    heading: "Creative collection",
+    image: "/images/side-image-1.png"
+  },
+  {
+    text: "Our cutting-edge technology conducts in-depth analysis of gathered creative concepts, generating 80+ data-points per image. Gain valuable insights and make data-driven decisions for impactful marketing campaigns.",
+    heading: "Concept analysis",
+    image: "/images/side-image-2.png"
+  },
+  {
+    text: "Leveraging the gathered resources and performance insights, our AI continuously learns, evolving to deliver even better results over time. Experience the power of adaptive intelligence for exceptional marketing outcomes.",
+    heading: "Artificial intelligence",
+    image: "/images/side-image-3.png"
+  },
+  {
+    text: "Experience AI-generated high-ROI ad concepts ranked by projected conversion rates. Empower your campaigns with top-performing ideas to maximize results and elevate your business growth.",
+    heading: "Concept generation",
+    image: "/images/side-image-4.png"
+  },
+]
 </script>
 
 <style scoped></style>

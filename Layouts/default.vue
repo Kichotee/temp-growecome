@@ -1,5 +1,5 @@
 <template>
-    <div class="">
+    <div class="bg-black font-inter">
         <Navbar />
         <slot />
         <SectionsFooter />

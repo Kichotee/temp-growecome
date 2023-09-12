@@ -1,20 +1,23 @@
 <template >
-  <div class=" max-w-screen  overflow-hidden bg-brand-primary">
+  <div class=" max-w-screen rounded-[0_0_0_9.5rem] pb-[14.75rem] overflow-hidden bg-[#f1f5f9]">
     <div class="margin">
 
       <div class="container mx-auto relative pt-[3.44rem]">
         <div class="flex flex-wrap justify-center gap-8 md:justify-between g">
-          <div class="rounded-[3.125rem] border text-sm md:text-base text-white px-2 items-center flex gap-4 py-3">
-            <span>*</span>
-            <p>
+          <div class="rounded-[3.125rem]  bg-brand-primary text-sm md:text-base text-white p-1">
+            <div class="border rounded-[3.125rem] items-center flex gap-4 p-1">
 
-              25% OFF ANY PACKAGE USE: <span class="text-amber-400"> GROWECOM </span> TODAY!
-            </p>
-            <div class="rounded-[1.25rem] px-3 font-bold bg-amber-400 text-text-blue  py-[0.62rem]">
-              CLAIM
+              <span>*</span>
+              <p>
+
+                25% OFF ANY PACKAGE USE: <span class="text-amber-400"> GROWECOM </span> TODAY!
+              </p>
+              <div class="rounded-[1.25rem] px-3 font-bold bg-amber-400 text-text-blue  py-[0.62rem]">
+                CLAIM
+              </div>
             </div>
           </div>
-          <div class="flex bg-white px-4 items-center py-2 h-max rounded-md gap-2">
+          <div class="flex bg-[#F1f1f1] px-4 items-center py-2 h-max rounded-md gap-2">
             <div class="text-sm md:text-base">
               English
             </div>
@@ -39,7 +42,96 @@
             </svg>
           </div>
         </div>
-        <div class="flex flex-col gap-4  text-white items-center">
+
+
+
+        <section class="flex flex-col md:items-center md:flex-row mt-[3.75rem]">
+
+          <div class="flex flex-col">
+            <p class="headings text-text-blue max-w-[43rem]">
+              AI-powered Ad & Social Concepts, Customer Service
+            </p>
+            <p class="pt-[1.25rem] pb-[1.87rem] font-sec max-w-[39rem]">
+              Generate high quality ad and social media post design concepts that are focused on conversion and as well
+              streamlining your customer support.
+            </p>
+          <CommonButton background="bg-brand-primary"/>
+
+          </div>
+          <div class="flex flex-col  relative items-center">
+            <div class="z-10 relative">
+
+              <img src="/images/showcase.png" class="max-w-[40rem]" alt="">
+            </div>
+            <div class="absolute top-[45.8%] z-0">
+              <svg xmlns="http://www.w3.org/2000/svg" width="36" height="134" viewBox="0 0 36 134" fill="none">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M20 0V76H24V80H28C29.0599 80.0032 30.0755 80.4256 30.8249 81.1751C31.5744 81.9245 31.9968 82.9401 32 84V88H36V92H32V96H36V100H32V104C31.9968 105.06 31.5744 106.075 30.8249 106.825C30.0755 107.574 29.0599 107.997 28 108H24V112H20V134H16V112H12V108H8C6.94011 107.997 5.92453 107.574 5.17507 106.825C4.42561 106.075 4.00317 105.06 4 104V100H0V96H4V92H0V88H4V84C4.00317 82.9401 4.42561 81.9245 5.17507 81.1751C5.92453 80.4256 6.94011 80.0032 8 80H12V76H16V0H20ZM8 104H28V84H8V104ZM14.0317 86H16.7217L20.6537 102H18.5297L17.6257 98.25H12.9937L12.0657 102H10.0117L14.0317 86ZM15.2997 87.9L13.2637 96.648H17.3577L15.3917 87.9H15.2997ZM24.4877 86H22.4877V102H24.4877V86Z"
+                  fill="#2E2067" />
+              </svg>
+            </div>
+            <div class="card-box relative z-10 text-text-blue flex rounded-xl shadow-xl gap-[1.88rem] px-[1.38rem] bg-white/50  py-[0.94rem]">
+              <div class="bg-white px-4 rounded-xl pt-[0.44rem] pb-[1.44rem]">
+                <div class="bg-[#E2E8F0] px-[0.31rem] py-[0.62rem] rounded-[0_0_0.625rem_0.625rem] font-sans  shadow-[0px_4px_8px_0px_#00000001]">
+                  <div class="flex text-[0.75rem] justify-center">
+
+                    Brand
+                  </div>
+                </div>
+                <div class="mt-8">
+
+                  <img src="/images/Fendi.png" class="max-w-[5.334rem]" alt="">
+                </div>
+              </div>
+              <div class="bg-white px-4 min-h-[7.5rem] text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
+                <div class="bg-[#E2E8F0] px-[0.31rem] py-[0.62rem] rounded-[0_0_0.625rem_0.625rem] font-sans  shadow-[0px_4px_8px_0px_#00000001]">
+                  <div class="flex text-[0.75rem] justify-center">
+
+                  Size
+                  </div>
+                </div>
+                <div class="mt-[1.38rem] text-center">
+
+                Vertical ize
+                 <p>
+                 (1080 x 1080)
+                 </p>
+                </div>
+              </div>
+              <div class="bg-white px-4 min-h-[7.5rem] text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
+                <div class="bg-[#E2E8F0] px-[0.31rem] py-[0.62rem] rounded-[0_0_0.625rem_0.625rem] font-sans  shadow-[0px_4px_8px_0px_#00000001]">
+                  <div class="flex text-[0.75rem] justify-center">
+
+                  Text
+                  </div>
+                </div>
+                <div class="mt-[1.38rem] text-center">
+
+                 Reach your ideal 
+                 <p>
+                 getaway house
+                 </p>
+                </div>
+              </div>
+              <div class="bg-white px-4 min-h-[7.5rem] text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
+                <div class="bg-[#E2E8F0] px-[0.31rem] py-[0.62rem] rounded-[0_0_0.625rem_0.625rem] font-sans  shadow-[0px_4px_8px_0px_#00000001]">
+                  <div class="flex text-[0.75rem] justify-center">
+
+                 Image
+                  </div>
+                </div>
+                <div class="mt-[1.38rem] text-center">
+
+                <img src="/images/home.png" class="max-w-[4.5rem]" alt="">
+                </div>
+              </div>
+             
+             
+            </div>
+          </div>
+        </section>
+
+        <!-- <div class="flex flex-col gap-4  text-white items-center">
           <div class="mt-[3rem] md:mt-[6.19rem] flex  font-['Baloo_Bhai_2'] justify-center">
             <p
               class="text-2xl md:text-[4rem] font-semibold font-['Baloo_Bhai_2']  text-white max-w-[56rem] text-center leading-[118.2%]">
@@ -56,17 +148,18 @@
           <Button class="mt-[0.88rem] bg-brand-secondary w-[clamp(20%,20%,50%)]  py-3 rounded-[0.625rem]">
             Register
           </Button>
-        </div>
+        </div> -->
       </div>
 
     </div>
-    <div class="">
+    <!-- <div class="">
       <img src="/images/ellipse.png " class="w-screen " alt="">
-    </div>
+    </div> -->
   </div>
   <div class=" w-[41rem] mx-auto hidden md:block -translate-y-[18rem]">
-    <img src="/images/hero_img.png" alt="">
-  </div></template>
+    <!-- <img src="/images/hero_img.png" alt=""> -->
+  </div>
+</template>
 
 <script setup lang="ts"></script>
 

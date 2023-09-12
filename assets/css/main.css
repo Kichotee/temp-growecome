@@ -3,5 +3,9 @@
 @tailwind utilities;
 
 .margin{
-    @apply px-[2rem] md:px-[7.5rem]
+    @apply px-[2rem] md:px-[6.25rem]
+}
+.headings{
+    @apply text-[3rem] font-bold
+
 }

@@ -65,8 +65,8 @@ const BORDER = {
 const TEXT = {
   main: "#2E2C34",
   sub: "#52525B",
-  blue: "#3B2A82",
-  misc:"#2E2067",
+  blue: "#2E2067",
+  misc:"#9333EA",
   offWhite: "#EBE7EF",
 };
 
@@ -199,8 +199,8 @@ module.exports = {
       DEFAULT: '0.25rem',
       md: '0.375rem',
       lg: '0.5rem',
-      xl: '0.75rem',
-      '2xl': '1rem',
+      xl: '0.625rem',
+      '2xl': '1.25rem',
       '3xl': '1.5rem',
       full: '9999px',
     },
