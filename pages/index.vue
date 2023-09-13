@@ -1,20 +1,16 @@
 <template>
-    <NuxtLayout name="default">
+    <div class=" overflow-x-hidden bg-black">
+        <Navbar />
+        <SectionsHero />
+        <SectionsClientele />
 
-
-
-        <div class=" overflow-x-hidden">
-            <SectionsHero />
-            <SectionsClientele />
-
-            <SectionsGridPage />
-            <SectionsInfo />
-            <!-- <SectionsInvestor /> -->
-            <SectionsMerch />
-            <!-- <SectionsTestimonial /> -->
-
-        </div>
-    </NuxtLayout>
+        <SectionsGridPage />
+        <SectionsInfo />
+        <!-- <SectionsInvestor /> -->
+        <SectionsMerch />
+        <!-- <SectionsTestimonial /> -->
+        <SectionsFooter />
+    </div>
 </template>
 
 <script setup lang="ts">
