@@ -1,45 +1,69 @@
 <template>
-  <div class="w-full margin pb-[6.2rem] pt-[9.5rem] relative  bg-white">
+  <div class="w-full margin pb-[6.2rem] pt-[9.5rem] relative  rounded-[0_6.25rem_0_0] bg-white">
     <div class="container mx-auto">
 
-      <div class="flex  flex-wrap justify-between">
+      <div class="">
+        <h2 class="headings text-text-blue text-center mb-[6.25rem]">
+          Rave Reviews: Growecom in action
+        </h2>
+        <div class="">
+          <div class="flex gap-[2rem]">
+
+
+            <div
+              class=" border px-8 pt-[2.38rem] pb-[3.08rem] flex flex-col gap-[1.68rem] shadow-md rounded-[.625rem]"
+              v-for="item in testimonialData" :key="item.author">
+              <div class="basis-1/5">
+                <img :src="item.comapnylogo" alt="">
+              </div>
+              <div class=" flex flex-col text-sm md:text-base basis-3/5">
+                <blockquote>
+                  {{ item.text }}
+                </blockquote>
+              </div>
+              <div class="flex  gap-[0.62rem]">
+                <div class="p-2 bg-gray-200 rounded-xl">
+
+                  <img :src="item.imgUrl" class="max-w-[3.625rem]" alt="">
+                </div>
+                <div class="">
+                  <p class="font-['Baloo_Bhai_2'] md:text-[1.5rem]">
+                    {{ item.author }}
+                  </p>
+                 
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="flex flex-col mt-[12.56rem] flex-wrap justify-between">
         <div class="">
           <div class="flex text-text-blue flex-col font-['Baloo_Bhai_2']  text-[2.5rem] leading-[132.2%] font-semibold">
             <p>
 
-              Frequently Asked
-              <svg xmlns="http://www.w3.org/2000/svg" width="247" height="9" viewBox="0 0 247 9" fill="none">
-                <path d="M1 3C38.6826 3.04313 235.084 10.7626 245 3" stroke="url(#paint0_linear_151059_6253)"
-                  stroke-width="5" />
-                <defs>
-                  <linearGradient id="paint0_linear_151059_6253" x1="123" y1="3" x2="123" y2="6.45966"
-                    gradientUnits="userSpaceOnUse">
-                    <stop stop-color="#9333EA" />
-                    <stop offset="1" stop-color="#CE6697" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              Frequently Asked Questions
             </p>
 
             <span>
 
-              Questions
             </span>
           </div>
           <p class="text-[1.25rem] font-sans">
-            Exploring Everything You Need to Know
+            Our clients love the improved conversion rates, including copy-writer, and beautiful designs!
           </p>
         </div>
         <div class="">
 
           <!-- Accordion -->
-          <div class="flex justify-center rounded-md items-center w-full">
+          <div class="flex justify-start rounded-md items-start mt-6 w-full">
 
-            <div
-              class="  lg:min-w-[48rem] flex flex-col gap-4 lg:max-w-[48.1rem] !lg:rounded-0 rounded-2xl overflow-clip mx-auto">
-              <div v-for="item, index in accordionData" :key="item.title" class="lg:px-[1.9rem]">
+            <div class="flex flex-col min-w-full max-w-full gap-4 !lg:rounded-0 rounded-2xl overflow-clip">
+              <div v-for="item, index in accordionData" :key="item.title" class="">
                 <div
-                  class="bg-[#FAF5FF] md:duration:300 rounded-xl duration-500 ease-linear lg:px-[2.58rem] px-4 py-[2.24rem]"
+                  class="bg-[#FFF]  m-1 shadow-md md:duration:300 rounded-xl duration-500 ease-linear lg:px-[2.58rem] px-4 py-[1rem]"
                   :class="[accordionState === index && '']">
                   <div class="flex flex-col lg:flex-col md:flex-row items-center gap-6 ">
                     <div class="basis-4/5 text-text-blue flex w-full flex-row justify-between items-center">
@@ -51,7 +75,8 @@
 
                       <div @click="() => toggleAccordion(index as 0 | 1 | 2 | 3)"
                         class="text-xl hover:bg-[#9333EA30] duration-300 font-bold rounded-full cursor-pointer px-3 py-1 md:flex items-center text-black">
-                        <svg v-if="accordionState===index" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <svg v-if="accordionState === index" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                          viewBox="0 0 24 24" fill="none">
                           <path d="M5 12H19" stroke="#9333EA" stroke-width="2" stroke-linecap="round"
                             stroke-linejoin="round" />
                         </svg>
@@ -80,7 +105,6 @@
 
 
                   </div>
-                  .
                 </div>
               </div>
             </div>
@@ -99,12 +123,38 @@ const toggleAccordion = (value: 0 | 1 | 2 | 3
 ) => {
   accordionState.value = value
 }
+const testimonialData = [
+  {
+    comapnylogo:"/images/testimonial-logo-1.png",
+    text: "Growecom has transformed the way we approach advertising. The AI-generated creatives are nothing short of impressive. Our click-through rates have skyrocketed, and our conversion rates have doubled since using Growecom. It's a game-changer for our business!",
+    author: "John Smith",
+    imgUrl: "/images/testimonial-person-1.png",
+    role: "CEO of SmithTech"
+  },
+  {
+    comapnylogo:"/images/testimonial-logo-2.png",
+
+    text: "“As a marketing agency, time is money, and we need creatives that work. Growecom has become our secret weapon for delivering exceptional results to our clients. The AI-powered creatives are not only effective but also save us hours of design work. It's a win-win!”",
+    author: "Saarah Johnson",
+    imgUrl: "/images/testimonial-person-2.png",
+    role: "Marketing Director at AdVantage Agency"
+  },
+  {
+    comapnylogo:"/images/testimonial-logo-3.png",
+
+    text: "I was skeptical about AI-generated creatives, but Growecom has exceeded my expectations. The ad content it produces is on point, and the platform's insights have helped us fine-tune our advertising strategy. It's like having a virtual creative team that never sleeps!",
+    author: "Emily Davis",
+    imgUrl: "/images/testimonial-person-3.png",
+    role: "E-commerce Entrepreneur"
+  },
+]
 const accordionData = [
-    { title: "What is prophone?", content: `Growecom is an AI-powered creative generation platform that crafts persuasive ad creatives and social media posts. It uses artificial intelligence to analyze your target audience, platform, and unique business needs to create high-performing ad content.` },
-    { title: "How can Growecom benefit my business?", content: `` },
-    { title: "vIs Growecom compatible with my advertising platforms?", content: `` },
-    { title: "Is there a free trial available?", content: `` },
-    // { title: "Can I try prophone before committing?", content: `` },
+  { title: "What are “Brands”??", content: `` },
+  { title: "What is “Unlimited free stock images?", content: `` },
+  { title: "What is “Concept insights”?", content: `` },
+  { title: "What is a “Credit”", content: `` },
+  { title: "What is your refund policy?", content: `` },
+  // { title: "Can I try prophone before committing?", content: `` },
 
 ]
 </script>

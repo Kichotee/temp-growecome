@@ -9,9 +9,9 @@
 
             <SectionsGridPage />
             <SectionsInfo />
-            <SectionsInvestor />
+            <!-- <SectionsInvestor /> -->
             <SectionsMerch />
-            <SectionsTestimonial />
+            <!-- <SectionsTestimonial /> -->
 
         </div>
     </NuxtLayout>

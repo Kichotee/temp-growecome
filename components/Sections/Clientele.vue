@@ -51,8 +51,8 @@
       </div>
 
       <div class="flex gap-2">
-        <div class="basis-1/2 order-1 pt-[6.68rem]">
-          <img src="/images/placeholder.png" class="" alt="">
+        <div class="basis-1/2 order-1 gap-[4.43rem] pt-[6.68rem]">
+          <img src="/images/Ai.png" class="max-w-[37rem]" alt="">
         </div>
         <div class="basis-1/2 mt-[6.68rem] order-2">
           <div class="">

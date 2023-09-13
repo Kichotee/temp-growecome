@@ -1,17 +1,17 @@
 <template>
-  <footer class=" text-text-blue px-8 lg:pl-[7.5rem] md:pt-[7.13rem] pt-6  lg:pr-[12.5rem] ">
+  <footer class=" text-white px-8 lg:pl-[7.5rem] md:pt-[7.13rem] pt-6  lg:pr-[12.5rem] ">
     <div class="flex  items-start  md:justify-between flex-col md:flex-row">
       <div class="flex w-full md:w-max items-center gap-2">
         <LazyLogo />
       </div>
-      <div class="flex flex-wrap gap-4 justify-between md:justify-evenly  w-full">
+      <div class="flex flex-wrap gap-4 text-white  justify-between md:justify-evenly  w-full">
 
         <div v-for="item,index in footer" class="flex flex-col gap-[1.87rem] mt-3" :key="item.title">
           <h5 :class="index===footer.length+1 ? ' md:text-[1.5rem]':''" class="font-['Baloo_Bhai_2'] text-[1.25rem]">
             {{ item.title }}
           </h5>
           <ul class="flex flex-col gap-[0.94rem]">
-            <li v-for="data in item.links" class="text-sm md:text-base text-text-sub">
+            <li v-for="data in item.links" class="text-sm md:text-base text-white ">
             {{ data }}
             </li>
           </ul>
