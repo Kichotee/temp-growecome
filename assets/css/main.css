@@ -6,6 +6,6 @@
     @apply px-[2rem] md:px-[6.25rem]
 }
 .headings{
-    @apply text-[3rem] font-bold
+    @apply md:text-[3rem] font-semibold text-center  md:font-bold text-[1.5rem]
 
 }

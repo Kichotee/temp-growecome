@@ -1,6 +1,6 @@
 <template>
     <!-- navbar configuration -->
-    <div class="  margin  bg-white text-white ">
+    <div class="  margin  bg-white fixed w-full z-50 shadow-md text-white ">
         <div class="container  flex py-4 justify-between font-sans  text-lg items-center w-full mx-auto">
 
             <LazyLogo />

@@ -1,11 +1,11 @@
 <template>
-  <Button class=" max-w-max rounded-xl text-white " :class="props.background">
-              <div class="flex items-center px-3 gap-2">
+  <Button :level="2" class=" max-w-max rounded-xl text-white " :class="props.background">
+              <div class="flex items-center text-sm font-medium md:text-base md:font-semibold px-3 gap-2">
                 <p>
 
                   Get Started
                 </p>
-                <div class="mt-4">
+                <div class="pt-4 md:mt-4">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                       <g filter="url(#filter0_dd_151264_2513)">
