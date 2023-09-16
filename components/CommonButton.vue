@@ -5,7 +5,7 @@
 
                   Get Started
                 </p>
-                <div class="pt-4 md:mt-4">
+                <div class="pt-4 ">
 
                     <svg xmlns="http://www.w3.org/2000/svg" width="49" height="51" viewBox="0 0 49 51" fill="none">
                       <g filter="url(#filter0_dd_151264_2513)">

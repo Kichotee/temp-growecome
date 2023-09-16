@@ -61,23 +61,23 @@
 
             </div>
           </div>
-          <div class=" border max-w-[26rem] rounded-2xl border-text-misc pt-[1.88rem] pb-[2.62rem] px-[1.75rem]">
+          <div class=" border max-w-[26rem] rounded-2xl border-text-misc pt-4 md:pt-[1.88rem] pb-6 md:pb-[2.62rem] px-4 md:px-[1.75rem]">
             <svg xmlns="http://www.w3.org/2000/svg" width="65" height="64" viewBox="0 0 65 64" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
                 d="M10.0674 0C4.54454 0 0.0673828 4.47715 0.0673828 10V54C0.0673828 59.5228 4.54454 64 10.0674 64H54.2216C59.7444 64 64.2216 59.5228 64.2216 54V10C64.2216 4.47715 59.7444 0 54.2216 0H10.0674ZM46.7737 31.266C47.2236 31.0935 47.701 31.0034 48.183 31C50.4044 31 52.1927 32.784 52.1927 35C52.1927 37.216 50.4044 39 48.183 39C45.9617 39 44.1734 37.216 44.1734 35C44.1784 34.7867 44.1998 34.574 44.2376 34.364L39.428 30.438C38.7265 30.803 37.9477 30.9956 37.1565 31C36.6593 31 36.1882 30.906 35.7331 30.774L29.8931 37.658C30.0434 38.08 30.1397 38.526 30.1397 39C30.1397 41.216 28.3514 43 26.13 43C23.9087 43 22.1204 41.216 22.1204 39C22.1238 38.6541 22.1744 38.3103 22.2708 37.978L17.1324 32.852C16.8036 32.94 16.4648 33 16.1059 33C13.8846 33 12.0963 31.216 12.0963 29C12.0963 26.784 13.8846 25 16.1059 25C18.3273 25 20.1156 26.784 20.1156 29C20.1156 29.358 20.0554 29.696 19.9652 30.022L25.1036 35.148C25.4324 35.06 25.7712 35 26.13 35C26.3675 35.003 26.6043 35.0264 26.8377 35.07L32.6698 28.194C32.345 27.53 32.1445 26.792 32.1445 26C32.1445 23.228 34.3779 21 37.1565 21C39.9352 21 42.1686 23.228 42.1686 26C42.1686 26.468 42.0844 26.912 41.9661 27.34L46.7737 31.266Z"
                 fill="white" />
             </svg>
-            <p class="text-[1.5rem] mt-[3.13rem]">
+            <p class="md:text-[1.5rem] mt-[3.13rem]">
               Over 90 percent
             </p>
-            <p class="text-[1.5rem]">
+            <p class="md:text-[1.5rem] leading-normal">
               of our users improve CTR
             </p>
-            <p class="font-sans mt-[1.06rem]">
+            <p class="font-sans text-sm  leading-normal mt-[1.06rem]">
               In comparison to concepts that are
               not back by result driven data
             </p>
-            <div class="flex gap-1 mt-[3.5rem]">
+            <div class="flex gap-1 mt-8 md:mt-[3.5rem]">
               <div v-for="item in 5" class="inline" :key="item">
                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32" fill="none">
                   <path

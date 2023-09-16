@@ -48,7 +48,7 @@
         <section class="flex flex-col text-center md:text-left items-center md:flex-row mt-[3.75rem]">
 
           <div class="flex flex-col items-center md:items-start">
-            <p class="headings text-text-blue max-w-[43rem]">
+            <p class="headings text-text-blue !text-left max-w-[43rem]">
               AI-powered Ad & Social Concepts, Customer Service
             </p>
             <p class="pt-[1.25rem] pb-[1.87rem] text-sm md:text-base font-sec max-w-[39rem]">
@@ -71,11 +71,11 @@
               </svg>
             </div>
             <div
-              class="card-box relative z-10 text-text-blue flex flex-wrap rounded-xl shadow-xl gap-[1.88rem] px-[1.38rem] bg-white/50  py-[0.94rem]">
-              <div class="bg-white px-4 rounded-xl pt-[0.44rem] pb-[1.44rem]">
+              class="card-box relative z-10 text-text-blue grid grid-cols-2 md:grid-cols-4  gap-6 rounded-xl shadow-xl md:gap-[1.88rem] px-[1.38rem] bg-white/50  py-[0.94rem]">
+              <div class="bg-white px-4 max-h-[7.5rem]  rounded-xl pt-[0.44rem] pb-[1.44rem]">
                 <div
                   class="bg-[#E2E8F0] px-[0.31rem] py-[0.62rem] rounded-[0_0_0.625rem_0.625rem] font-sans  shadow-[0px_4px_8px_0px_#00000001]">
-                  <div class="flex text-[0.75rem] justify-center">
+                  <div class="flex text-[0.62rem] md:text-[0.75rem] justify-center">
 
                     Brand
                   </div>
@@ -85,10 +85,10 @@
                   <img src="/images/Fendi.png" class="max-w-[5.334rem]" alt="">
                 </div>
               </div>
-              <div class="bg-white px-4 min-h-[7.5rem] text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
+              <div class="bg-white px-4 max-h-[7.5rem]  text-[0.62rem] md:text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
                 <div
                   class="bg-[#E2E8F0] px-[0.31rem] py-[0.62rem] rounded-[0_0_0.625rem_0.625rem] font-sans  shadow-[0px_4px_8px_0px_#00000001]">
-                  <div class="flex text-[0.75rem] justify-center">
+                  <div class="flex text-[0.62rem] md:text-[0.75rem] justify-center">
 
                     Size
                   </div>
@@ -101,10 +101,10 @@
                   </p>
                 </div>
               </div>
-              <div class="bg-white px-4 min-h-[7.5rem] text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
+              <div class="bg-white px-4 max-h-[7.5rem]  text-[0.62rem] md:text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
                 <div
                   class="bg-[#E2E8F0] px-[0.31rem] py-[0.62rem] rounded-[0_0_0.625rem_0.625rem] font-sans  shadow-[0px_4px_8px_0px_#00000001]">
-                  <div class="flex text-[0.75rem] justify-center">
+                  <div class="flex text-[0.62rem] md:text-[0.75rem] justify-center">
 
                     Text
                   </div>
@@ -117,10 +117,10 @@
                   </p>
                 </div>
               </div>
-              <div class="bg-white px-4 min-h-[7.5rem] text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
+              <div class="bg-white px-4 max-h-[7.5rem]  text-[0.62rem] md:text-[0.75rem] rounded-[1.25rem] pt-[0.44rem] pb-[1.44rem]">
                 <div
                   class="bg-[#E2E8F0] px-[0.31rem] py-[0.62rem] rounded-[0_0_0.625rem_0.625rem] font-sans  shadow-[0px_4px_8px_0px_#00000001]">
-                  <div class="flex text-[0.75rem] justify-center">
+                  <div class="flex text-[0.62rem] md:text-[0.75rem] justify-center">
 
                     Image
                   </div>

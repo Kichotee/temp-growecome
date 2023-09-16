@@ -60,9 +60,9 @@
           in the digital landscape
         </p>
       </div>
-      <div class="mt-[5.25rem] flex flex-col md:flex-row items-center md:items-start  gap-[1.65rem]">
+      <div class="mt-[5.25rem] flex flex-wrap md:flex-nowrap items-center md:items-start  gap-[1.65rem]">
         <div v-for="item in cardDetails" :key="item.icon"
-          class="bg-white min-h-[20rem] shadow max-w-[16.4rem] rounded-xl px-6 py-4 flex flex-col gap-5">
+          class="mx-auto bg-white min-h-[20rem] shadow max-w-[16.4rem] rounded-xl px-6 py-4 flex flex-col gap-5">
           <div class="md:p-3 p-1 shadow-lg  rounded-md w-max bg-gray-200">
             <div class="bg-brand-primary px-2 py-2">
 
@@ -90,7 +90,7 @@
           </LazyButton>
         </div>
       </div>
-      <div class="flex flex-col items-center mt-[6.25rem]">
+      <div class="flex flex-col justify-center w-full items-center mt-[6.25rem]">
         <CommonButton background="bg-brand-primary"> 
 
 
