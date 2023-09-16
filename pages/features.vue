@@ -1,7 +1,7 @@
 <template>
     <div class="  overflow-x-hidden bg-black">
         <Navbar />
-        <div class="bg-[#f1f5f9] margin  min-h-[39.9rem] rounded-[0_0_0_6.25rem] pt-[11.4rem]">
+        <div class="bg-[#f1f5f9] margin   min-h-[39.9rem] rounded-[0_0_0_6.25rem] pt-[11.4rem]">
             <div class="container mx-auto">
 
                 <div class="relative ">

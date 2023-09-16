@@ -1,7 +1,7 @@
 <template>
     <!-- navbar configuration -->
     <div class="  margin  bg-white fixed w-full z-50 shadow-md text-white ">
-        <div class="container  flex py-4 justify-between font-sans  text-lg items-center w-full mx-auto">
+        <div class="container  flex py-4 justify-between  font-sans  text-lg items-center w-full mx-auto">
 
             <LazyLogo />
             <div class="md:flex hidden  gap-5 basis-1/3 text-text-sub ">
@@ -16,7 +16,7 @@
             </div>
             <div class="md:flex hidden   gap-4  justify-between rounded-md">
                 <Button :level="1"
-                    class="flex border !border-brand-primary  gap-2  px-4 py-2 items-center rounded-md border-brand-primary text-brand-secondary">
+                    class="flex border   gap-2  px-4 py-2 items-center rounded-md border-brand-primary text-brand-secondary">
                     <p>
 
                         Sign in
@@ -35,16 +35,60 @@
 
                 </Button> -->
             </div>
+            <div ref="nav" @click="handleNavClick" class="navTrigger block md:hidden">
+                <i></i><i></i><i></i>
+            </div>
         </div>
     </div>
+     <Transition>
+
+         <div v-show="navState===true" class="flex flex-col gap-12 top-[5rem] rounded-[0_0_2.5rem_2.5rem] py-4 fixed w-full bg-white z-40 px-8 items-center md:hidden ">
+             <div v-for="item in links" :key="item.name" class="">
+                 <NuxtLink active-class="font-bold text-text-blue" class="flex" :to="item.link">
+                     <div class="grid grid-cols-2 gap-3 py-2 w-[6rem] ">
+                         <i class="basis-1/3" v-html="item.icon"></i>
+                        <p class="basis-2/4">
+     
+                            {{ item.name }}
+                        </p> 
+                     </div>
+                 </NuxtLink>
+             </div>
+             <Button :level="1"
+                         class="flex border   gap-2  px-4 py-2 items-center rounded-md border-brand-primary text-brand-secondary">
+                         <p>
+     
+                             Sign in
+                         </p>
+                         <p>
+                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                 <path
+                                     d="M12.7101 17.7102L17.7101 12.7102C17.8011 12.6151 17.8725 12.5029 17.9201 12.3802C18.0201 12.1367 18.0201 11.8636 17.9201 11.6202C17.8725 11.4974 17.8011 11.3853 17.7101 11.2902L12.7101 6.29019C12.6169 6.19695 12.5062 6.12299 12.3844 6.07253C12.2625 6.02207 12.132 5.99609 12.0001 5.99609C11.7338 5.99609 11.4784 6.10188 11.2901 6.29019C11.1018 6.47849 10.996 6.73388 10.996 7.00019C10.996 7.26649 11.1018 7.52188 11.2901 7.71019L14.5901 11.0002H7.0001C6.73489 11.0002 6.48053 11.1055 6.293 11.2931C6.10546 11.4806 6.0001 11.735 6.0001 12.0002C6.0001 12.2654 6.10546 12.5198 6.293 12.7073C6.48053 12.8948 6.73489 13.0002 7.0001 13.0002H14.5901L11.2901 16.2902C11.1964 16.3831 11.122 16.4937 11.0712 16.6156C11.0204 16.7375 10.9943 16.8682 10.9943 17.0002C10.9943 17.1322 11.0204 17.2629 11.0712 17.3848C11.122 17.5066 11.1964 17.6172 11.2901 17.7102C11.3831 17.8039 11.4937 17.8783 11.6155 17.9291C11.7374 17.9798 11.8681 18.006 12.0001 18.006C12.1321 18.006 12.2628 17.9798 12.3847 17.9291C12.5065 17.8783 12.6171 17.8039 12.7101 17.7102Z"
+                                     fill="#9333EA" />
+                             </svg>
+                         </p>
+     
+                     </Button>
+         </div>
+     </Transition>
 </template>
 
 <script setup lang="ts">
 const path = ref("")
+const nav = ref<null | HTMLElement>(null)
 onMounted(() => {
-    console.log(window.location.pathname)
+  
     path.value = window.location.href
 })
+const navState = ref(false)
+const handleNavClick = () => {
+    // toggle animation
+    nav.value?.classList.contains("active") ?
+        nav.value?.classList.remove("active") :
+        nav.value?.classList.add("active")
+// toggle nav
+    navState.value = (!navState.value)
+}
 const links = [
     {
         name: "Homepage",
@@ -92,6 +136,232 @@ const links = [
  `
     },
 ]
+
+
+
 </script>
 
-<style scoped></style>
+<style scoped>
+.v-enter-active,
+.v-leave-active {
+  transition: opacity 0.5s ease;
+}
+
+.v-enter-from,
+.v-leave-to {
+  opacity: 0;
+}
+.navTrigger {
+    cursor: pointer;
+    width: 30px;
+    height: 25px;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+}
+
+
+.navTrigger.active i:nth-child(1) {
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+.navTrigger i {
+    background-color: #ddd;
+    border-radius: 2px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 4px;
+}
+
+i:nth-child(1) {
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+i:nth-child(2) {
+    margin: 5px 0;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+i:nth-child(3) {
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+
+
+
+
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+</style>

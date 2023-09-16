@@ -1,5 +1,5 @@
 <template >
-  <div class=" max-w-screen rounded-[0_0_0_9.5rem] pb-24 md:pb-[14.75rem] overflow-hidden bg-[#f1f5f9]">
+  <div class=" max-w-screen pt-[5rem]  rounded-[0_0_0_9.5rem] pb-24 md:pb-[14.75rem] overflow-hidden bg-[#f1f5f9]">
     <div class="margin">
 
       <div class="container mx-auto relative pt-[3.44rem]">
