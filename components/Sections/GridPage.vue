@@ -2,13 +2,13 @@
   <div class=" max-w-screen relative overflow-hidden rounded-[0_6.25rem_0_6.25rem] z-30 pb-[5.19rem] bg-[#f1f5f9]">
     <div class="margin relative z-40">
 
-      <div class="container mx-auto flex flex-col items-center relative pt-[5.78rem]">
+      <div class="container mx-auto flex leading-normal flex-col items-center relative pt-[5.78rem]">
         <div class="flex flex-col text-center text-text-blue font-['Baloo_Bhai_2'] max-w-[68rem] mx-auto  items-center">
-          <p class="text-sec text-[1.5rem]">WHAT WE OFFER</p>
+          <p class="text-sec md:text-[1.5rem]">WHAT WE OFFER</p>
           <h2 class="headings font-sans ">
             The most versatile AI technology
           </h2>
-          <p class="font-sans text-[1.125rem]">
+          <p class="font-sans leading-normal text-sm md:text-[1.125rem]">
             Discover the epitome of versatility in our AI technology From background removal to ad creation, copywriting,
             video optimization, and even AI-driven customer service, experience the limitless potential of a single,
             comprehensive solution. Elevate every facet of your marketing journey with unparalleled versatility.

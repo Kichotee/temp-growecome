@@ -48,7 +48,7 @@
         <section class="flex flex-col text-center md:text-left items-center md:flex-row mt-[3.75rem]">
 
           <div class="flex flex-col items-center md:items-start">
-            <p class="headings text-text-blue !text-left max-w-[43rem]">
+            <p class="headings text-text-blue md:!text-left max-w-[43rem]">
               AI-powered Ad & Social Concepts, Customer Service
             </p>
             <p class="pt-[1.25rem] pb-[1.87rem] text-sm md:text-base font-sec max-w-[39rem]">

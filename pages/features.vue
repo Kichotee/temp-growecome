@@ -72,7 +72,7 @@
 
                         <img src="/images/concept-3.png" class="md:max-w-[18rem]" alt="">
                     </div>
-                    <div class=" d:min-h-[25rem]  items-end flex">
+                    <div class=" md:min-h-[25rem]  items-end flex">
 
                         <img src="/images/concept-3.png" class=" md:max-w-[18rem] max-h-[18rem] " alt="">
                     </div>

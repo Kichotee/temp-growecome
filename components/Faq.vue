@@ -16,7 +16,7 @@
         </defs>
       </svg>
     </div> -->
-    <div class="flex flex-col  mt-[12.56rem] bg-transparent flex-wrap justify-between">
+    <div class="flex flex-col mt-12  md:mt-[12.56rem] bg-transparent flex-wrap justify-between">
       <div class="">
         <div class="flex text-text-blue text-center md:text-left flex-col font-['Baloo_Bhai_2']  text-[2.5rem] leading-[132.2%] font-semibold">
           <p>
@@ -28,7 +28,7 @@
 
           </span>
         </div>
-        <p class="text-[1.25rem] text-center md:text-left font-sans">
+        <p class="leading-normal text-sm md:text-[1.25rem] text-center md:text-left font-sans">
           Our clients love the improved conversion rates, including copy-writer, and beautiful designs!
         </p>
       </div>
@@ -45,7 +45,7 @@
                 <div class="flex flex-col lg:flex-col md:flex-row items-center gap-6 ">
                   <div class="basis-4/5 text-text-blue flex w-full flex-row justify-between items-center">
 
-                    <p class="font-bold font-['Baloo_Bhai_2']  md:text-12.5rem]  leading-[120%]">
+                    <p class="font-bold text-sm font-['Baloo_Bhai_2']  md:text-[1.25rem]  leading-[120%]">
 
                       {{ item.title }}
                     </p>
@@ -66,7 +66,7 @@
                       </svg>
                     </div>
                     <p v-if="accordionState === index"
-                      class="md:text-[0.861133rem] hidden text-[0.875rem] mt-4 leading-[120%] text-text-sub">
+                      class="md:text-[0.861133rem] hidden md:text-[0.875rem] mt-4 leading-[120%] text-text-sub text-xs">
                       {{ item.content }}
                     </p>
                   </div>
