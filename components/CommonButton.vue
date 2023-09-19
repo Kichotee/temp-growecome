@@ -1,5 +1,5 @@
 <template>
-  <Button :level="2" class=" max-w-max rounded-xl text-white " :class="props.background">
+  <Button :level="2" class=" max-w-max rounded-xl hover:scale-110 duration-150 text-white " :class="props.background">
     <div class="flex items-center justify-center text-sm font-medium md:text-base md:font-semibold px-3 gap-2">
       <p>
 

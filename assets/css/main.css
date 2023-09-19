@@ -9,3 +9,6 @@
     @apply md:text-[3rem] font-semibold text-center  md:font-bold text-[1.5rem]
 
 }
+html{
+    max-width: 100vw !important;
+}

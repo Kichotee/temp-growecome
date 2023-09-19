@@ -3,11 +3,11 @@
     <div class="container mx-auto">
 
      <Companies/>
-      <div class="flex flex-col md:flex-row gap-2">
-        <div class="md:basis-1/2 order-1 gap-[4.43rem] pt-16 md:pt-[6.68rem]">
+      <div class="flex flex-col xl:flex-row gap-2">
+        <div class="md:basis-1/2 mx-auto order-1 gap-[4.43rem] pt-16 md:pt-[6.68rem]">
           <img src="/images/Ai.png" class="md:max-w-[37rem]" alt="">
         </div>
-        <div class="basis-1/2 text-center md:text-left mt-16 md:mt-[6.68rem] order-2">
+        <div class="basis-1/2 text-center xl:text-left mt-16 md:mt-[6.68rem] order-2">
           <div class="">
             <p class="headings text-text-misc">
               The most powerful AI marketing tool at your fingertips
@@ -32,7 +32,7 @@
             designs. Growecom.io’s has changed that, by making available accessible ad concepts that are data-backed.
           </p>
         </div>
-        <div class="flex flex-wrap gap-8 font-sec  justify-center text-white">
+        <div class="flex xl:flex-wrap gap-8 font-sec  justify-center text-white">
           <div class=" border max-w-[26rem] rounded-2xl border-text-misc pt-[1.88rem] pb-[2.62rem] px-[1.75rem]">
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -90,7 +90,7 @@
             </div>
           </div>
         </div>
-<div class="mt-16 md:mt-[10.12rem] mx-auto flex flex-col items-center gap-2 text-white">
+<div class="mt-12 md:mt-[5.12rem] mx-auto flex flex-col items-center gap-2 text-white">
   <CommonButton background="bg-text-misc"/>
   <p>Try 100% free for 7 days. <span class="text-text-misc">
 

@@ -15,7 +15,7 @@
           </p>
 
         </div>
-        <div class="flex flex-wrap justify-between md:grid-cols-2 content-start gap-x-10 md:gap-y-14">
+        <div class="flex flex-wrap justify-center xl:justify-between md:grid-cols-2 content-start gap-x-10 md:gap-y-14">
           <div v-for="item in items" :key="item.title">
             <div
               class="bg-white hover:scale-90 shadow-[0_0_2px_0_#000012] duration-300 cursor-pointer min-w-[minmax(14rem,23rem)] min-h-[13rem] max-h-[13rem] pt-[3.75rem] pl-[1.88rem] mt-[5.08rem] pr-[1.19rem] relative rounded-[1.25rem]  text-text-blue">
@@ -34,7 +34,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-[10rem] flex flex-col gap-2 items-center">
+        <div class="mt-12 md:mt-[5rem] flex flex-col gap-2 items-center">
 
           <CommonButton background="bg-brand-primary" />
           <p>Try 100% free for 7 days. <span class="text-text-misc">

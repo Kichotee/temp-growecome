@@ -1,7 +1,7 @@
 <template>
     <!-- <NuxtLayout>
     </NuxtLayout> -->
-    <NuxtPage />
+    <NuxtPage class="overflow-x-hidden max-w-[100vw]" />
 </template>
 
 <script setup lang="ts">

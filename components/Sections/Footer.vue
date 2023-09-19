@@ -64,12 +64,15 @@
 
         <div v-for="item, index in footer" class="flex flex-col gap-[1.87rem] leading-normal mt-3" :key="item.title">
           <h5 :class="index === footer.length + 1 ? ' md:text-[1.5rem]' : ''"
-            class="font-['Baloo_Bhai_2'] md:text-[1.25rem]">
+            class="font-['Baloo_Bhai_2'] uppercase md:text-[1.25rem]">
             {{ item.title }}
           </h5>
           <ul class="flex flex-col gap-[0.94rem]">
             <li v-for="data in item.links" class="text-xs md:text-base text-white ">
-              {{ data }}
+              <NuxtLink :to="data.link">
+
+                {{  data.name  }}
+              </NuxtLink>
             </li>
           </ul>
         </div>
@@ -87,34 +90,38 @@ const footer = [
   {
     title: "Pages",
     links: [
-      "Home Page", "Features", "Solutions", "Pricing", "Blog"
+      {name:"Home Page", link:"/"}, 
+      {name:"Features", link:"/features"}, 
+      {name:"Solutions" , link:"/solution"}, 
+      {name:"Pricing" ,link:""}, 
+      {name:"Blog", link:"/blog"}
     ]
   },
   {
     title: "Features",
     links: [
-      "Ad concepts",
-      "Social concepts",
-      "Text content",
-      "AI customer service",
-      "Concept insight",
-      "Support"
+    { name: "Ad concepts", link: "" },
+  { name: "Social concepts", link: "" },
+  { name: "Text content", link: "" },
+  { name: "AI customer service", link: "" },
+  { name: "Concept insight", link: "" },
+  { name: "Support", link: "" }
     ]
   },
   {
     title: "Solutions",
     links: [
-      "Startup",
-      "Ecommerce",
-      "Agencies",
-      "Enterprise"
+    { name: "Startup", link: "" },
+  { name: "Ecommerce", link: "" },
+  { name: "Agencies", link: "" },
+  { name: "Enterprise", link: "" }
     ]
   },
   {
     title: "Growe.io",
     links: [
-      "Terms and conditions",
-      "Privacy policy",
+    { name: "Terms and conditions", link: "" },
+  { name: "Privacy policy", link: "" }
     ]
   },
 ]

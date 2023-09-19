@@ -4,7 +4,7 @@
       <p class="headings !text-center   text-text-misc">Explore how our AI works</p>
       <div class="flex flex-col relative text-white gap-16 md:gap-[15.06rem]">
         <div v-for="item, index in features" :key="item.text">
-          <div class="flex flex-wrap gap-8 md:gap-0 justify-between items-center">
+          <div class="flex xl:flex-wrap gap-8 xl:gap-0 justify-between items-center">
             <div class=" max-w-[29rem]">
               <h2 class="text-text-misc text-center md:text-left mb-1 font-sec">
                 {{ item.heading }}
@@ -14,7 +14,7 @@
                 {{ item.text }}
               </p>
             </div>
-            <i class="relative  hidden md:block bg-black md:-translate-x-[4.75rem] z-[20]">
+            <i class="relative  hidden xl:block bg-black md:-translate-x-[4.75rem] z-[20]">
 
               <svg xmlns="http://www.w3.org/2000/svg" width="104" height="118" viewBox="0 0 104 118" fill="none">
                 <path
@@ -32,7 +32,7 @@
             </div>
           </div>
         </div>
-        <div class="absolute md:left-1/2 hidden  h-full flex-col md:flex justify-between  -translate-x-1/2">
+        <div class="absolute md:left-1/2 hidden  h-full flex-col xl:flex justify-between  -translate-x-1/2">
           <div v-for="item in 4" :key="item" class="basis-1/4 " :class="item === 1 && 'mt-24'">
 
             <div :class="item === 4 && 'hidden'"
@@ -60,7 +60,7 @@
           in the digital landscape
         </p>
       </div>
-      <div class="mt-[5.25rem] flex flex-wrap md:flex-nowrap items-center md:items-start  gap-[1.65rem]">
+      <div class="mt-[5.25rem] flex flex-wrap xl:flex-nowrap items-center md:items-start  gap-[1.65rem]">
         <div v-for="item in cardDetails" :key="item.icon"
           class="mx-auto bg-white min-h-[20rem] shadow max-w-[16.4rem] rounded-xl px-6 py-4 flex flex-col gap-5">
           <div class="md:p-3 p-1 shadow-lg  rounded-md w-max bg-gray-200">

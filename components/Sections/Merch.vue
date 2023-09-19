@@ -7,7 +7,7 @@
           Rave Reviews: Growecom in action
         </h2>
         <div class="">
-          <div class="flex flex-wrap gap-6 md:gap-[2rem]">
+          <div class="flex flex-wrap lg:flex-nowrap gap-6 md:gap-[2rem]">
 
 
             <div
