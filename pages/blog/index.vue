@@ -1,10 +1,10 @@
 <template>
     <div class=" max-w-[100dvw] overflow-hidden  bg-black">
         <Navbar />
-        <div class="bg-[#f1f5f9] margin min-h-[39.9rem] rounded-[0_0_0_6.25rem] pt-[11.4rem]">
+        <div class="bg-[#f1f5f9] margin min-h-[39.9rem] relative rounded-[0_0_0_6.25rem] pt-[11.4rem]">
             <div class="container mx-auto">
 
-                <div class="relative ">
+                <div class=" ">
 
                     <div class="flex flex-col items-center justify-center">
                         <h2 class="headings text-text-blue font-inter">
@@ -17,26 +17,26 @@
                     </div>
                 </div>
                 <div
-                    class="absolute left-1/2 2xl:top-[26rem] p-2 text-center md:text-left  rounded-lg -translate-x-1/2 bottom-28 md:-bottom-[12rem]">
+                    class="absolute left-1/2 lg:top-[26rem] p-2 text-center md:text-left  md:-bottom-[18rem] rounded-lg -translate-x-1/2 -bottom-28  ">
                     <div class="bg-white py-6 px-4 ">
 
-                        <h2 class="text-base px-4 md:text-[1.25rem] font-semibold  leading-[125%]">
+                        <h2 class="text-base px-4 md:text-[1.25rem] font-semibold text-center xl:text-left leading-[125%]">
                             Featured Blog Posts
                         </h2>
                         <div
-                            class="flex flex-col  xl:flex-row items-center gap-2 md:gap-0 bg-white  mt-2 md:mt-8 md:items-start">
+                            class="flex flex-col  xl:flex-row items-center gap-2 md:gap-0 bg-white  mt-2 md:mt-8 xl:items-start">
 
-                            <div class="flex flex-col ">
+                            <div class="flex flex-col items-center xl:items-start ">
 
                                 <p
-                                    class="text-sm min-w-[19rem] translate-y-8 md:text-[1.25rem] font-semibold leading-[125%]">
+                                    class="text-sm min-w-[19rem] translate-y-8 md:text-[1.25rem] text-center xl:text-left font-semibold leading-[125%]">
                                     At Growecom.io, our AI can generate sales-focused texts and headlines tailored to the
                                     platform
                                     you're advertising on.
                                 </p>
                                 <div class=" flex flex-col items-center md:items-start gap-3 mt-12 md:mt-[2.81rem]">
 
-                                    <h4 class="flex  items-center">
+                                    <h4 class="flex text-center xl:text-left  w-full justify-center xl:justify-start items-center">
                                         Read more
                                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="17" viewBox="0 0 16 17"
                                             fill="none">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-36 md:mt-[16.69rem] margin">
+        <div class="mt-36 md:mt-[18.69rem]  margin">
             <p class="text-sm md:text-xl text-center font-semibold max-w-[68rem] mx-auto text-white">
                 Stay updated with our blog, where industry experts share insights, strategies, and innovative approaches to
                 supercharge your marketing efforts. Discover fresh perspectives and actionable tips for success.
@@ -72,10 +72,10 @@
 
         <div class="bg-black margin container mx-auto py-[6.25rem]">
 
-            <div class="flex flex-wrap  justify-between  mx-auto  gap-y-6 md:gap-y-[6.25rem]">
+            <div class="flex flex-wrap   justify-between    gap-y-6 md:gap-y-[6.25rem]">
 
 
-                <div class=" border bg-white hover:scale-95 duration-300  overflow-hidden pb-[3.08rem] flex flex-col items-center shadow-md rounded-[1.88rem]"
+                <div class=" border basis-[100%] md:basis-[45%] lg:basis-[31%] bg-white hover:scale-95 duration-300  overflow-hidden pb-[3.08rem] flex flex-col items-center shadow-md rounded-[1.88rem]"
                     v-for="item,index in blogData" :key="item.imgUrl">
                     <NuxtLink :to="'/blog/'+index">
                         <div class=" self-start px-4">
@@ -90,10 +90,10 @@
                             </div>
                         </div>
                         <div
-                            class="bg-[url('/images/blog-image.png')] min-w-[100%] md:min-w-[24.2459rem] overflow-hidden  h-[14rem] bg-cover">
+                            class="bg-[url('/images/blog-image.png')] min-w-[100%] lg:min-w-[18rem] 2xl:min-w-[24.2459rem] overflow-hidden  h-[14rem] bg-cover">
                         </div>
                         <div
-                            class=" mt-[2.25rem] flex flex-col font-sans px-4 md:text-[1.125rem] font-semibold text-text-blue md:max-w-[21.875rem] text-sm md:text-base ">
+                            class=" xl:mt-[2.25rem] flex flex-col font-sans px-4 md:text-[1.125rem] font-semibold text-text-blue md:max-w-[21.875rem] text-sm md:text-base ">
                             <blockquote>
                                 {{ item.text }}
                             </blockquote>

@@ -32,7 +32,7 @@
             designs. Growecom.io’s has changed that, by making available accessible ad concepts that are data-backed.
           </p>
         </div>
-        <div class="flex xl:flex-wrap gap-8 font-sec  justify-center text-white">
+        <div class="flex flex-wrap gap-8 font-sec  justify-center text-white">
           <div class=" border max-w-[26rem] rounded-2xl border-text-misc pt-[1.88rem] pb-[2.62rem] px-[1.75rem]">
             <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
               <path fill-rule="evenodd" clip-rule="evenodd"

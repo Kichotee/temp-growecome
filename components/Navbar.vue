@@ -6,7 +6,7 @@
             <LazyLogo />
             <div class="md:flex hidden  gap-5 basis-1/3 text-text-sub ">
                 <div v-for="item in links" :key="item.name">
-                    <NuxtLink active-class="font-bold text-text-blue" class="flex hover:opacity-25" :to="item.link">
+                    <NuxtLink active-class="font-bold text-text-blue" class="flex hover:opacity-70" :to="item.link">
                         <div class="flex gap-2">
                             <i v-html="item.icon"></i>
                             {{ item.name }}
@@ -14,9 +14,9 @@
                     </NuxtLink>
                 </div>
             </div>
-            <div class="md:flex hidden   gap-4  justify-between rounded-md">
+            <div class="md:flex hidden border-2 border-brand-secondary  gap-4  justify-between rounded-md">
                 <Button :level="1"
-                    class="flex border   gap-2  px-4 py-2 items-center rounded-md border-brand-primary text-brand-secondary">
+                    class="flex   gap-2  px-4 py-2 items-center rounded-md text-brand-secondary">
                     <p>
 
                         Sign in

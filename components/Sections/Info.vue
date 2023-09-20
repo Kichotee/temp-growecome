@@ -35,7 +35,7 @@
         <div class="absolute md:left-1/2 hidden  h-full flex-col xl:flex justify-between  -translate-x-1/2">
           <div v-for="item in 4" :key="item" class="basis-1/4 " :class="item === 1 && 'mt-24'">
 
-            <div :class="item === 4 && 'hidden'"
+            <div :class="[item === 4 && 'hidden',item===3 && 'h-[43%]']"
               class="h-1/2 absolute left-1/2 z-[10]   -mt-1 -translate-1/2 border border-text-misc"></div>
 
 

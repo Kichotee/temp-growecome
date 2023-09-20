@@ -2,9 +2,9 @@
     <div class="  overflow-x-hidden bg-black">
         <Navbar />
         <div class="bg-[#f1f5f9] margin   min-h-[39.9rem] rounded-[0_0_0_6.25rem] pt-[11.4rem]">
-            <div class="container mx-auto">
+            <div class="container relative mx-auto">
 
-                <div class="relative ">
+                <div class=" ">
     
                     <div class="flex flex-col items-center justify-center">
                         <h2 class="headings text-text-blue font-inter">
@@ -16,12 +16,12 @@
                         <CommonButton class="mt-12" background="bg-brand-primary" />
                     </div>
                 </div>
-                <div class="absolute left-1/2 2xl:top-[28rem] p-2  rounded-lg -translate-x-1/2 bottom-36 md:-bottom-[12rem]">
+                <div class="absolute left-1/2 md:top-[21rem] xl:top-[16rem] p-2  rounded-lg -translate-x-1/2 top-[20rem] ">
                     <img src="/images/features-image.png " class="max-w-[18rem] md:max-w-[41rem]" alt="">
                 </div>
             </div>
         </div>
-        <div class="mt-36 md:mt-[17.69rem] margin">
+        <div class="mt-36 md:mt-[21.69rem] lg:top-[18rem] margin">
             <Companies />
             <div class="text-center md:mt-[6.25rem] my-[3.5rem] md:mb-[6.25rem] mx-auto max-w-[68rem]">
 
@@ -74,12 +74,15 @@
                     </div>
                     <div class=" md:min-h-[25rem]  items-end flex">
 
-                        <img src="/images/concept-3.png" class=" md:max-w-[18rem] max-h-[18rem] " alt="">
+                        <img src="/images/concept-3.png" class=" md:max-w-[18rem]  " alt="">
                     </div>
                     <div class="max-h-max">
 
                         <img src="/images/concept-3.png" class=" md:max-w-[18rem]" alt="">
                     </div>
+                </div>
+                <div class="">
+                    <ReusedButton text="text-white" bg="bg-text-misc" />
                 </div>
             </div>
         </div>
@@ -154,9 +157,9 @@
                             <img :src="item" class="max-w-[9.375rem]" alt="">
                         </div>
                     </div>
-                    <div class="flex flex-wrap justify-evenly gap-4 md:justify-between md:max-w-[49rem] mx-auto ">
+                    <div class="flex flex-wrap justify-evenly gap-4 md:max-w-[49rem] mx-auto ">
 
-                        <div v-for="item in brands" :key="item" class="">
+                        <div v-for="item in brands" :key="item" class="basis-[6%]">
                             <img :src="item" class="max-w-[3rem]" alt="">
                         </div>
                     </div>
