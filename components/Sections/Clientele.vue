@@ -7,12 +7,12 @@
         <div class="md:basis-1/2 mx-auto order-1 gap-[4.43rem] pt-16 md:pt-[6.68rem]">
           <img src="/images/Ai.png" class="md:max-w-[37rem]" alt="">
         </div>
-        <div class="basis-1/2 text-center xl:text-left mt-16 md:mt-[6.68rem] order-2">
+        <div class="basis-1/2 !text-center xl:text-left mt-16 md:mt-[6.68rem] order-2">
           <div class="">
-            <p class="headings text-text-misc">
+            <p class="headings !text-center xl:!text-left text-text-misc">
               The most powerful AI marketing tool at your fingertips
             </p>
-            <p class="font-sans text-[1.125] text-white">
+            <p class="font-sans mt-[1.25rem] text-[1.125] !text-center leading-normal xl:!text-left text-white">
               Unleash AI-powered marketing capabilities. Seamlessly remove backgrounds, generate 100+ ads, optimize
               videos, craft persuasive copy, and train AI for customer service. Connect to platforms like Facebook and
               TikTok. Elevate sales, streamline operations, and thrive in the digital landscape.
@@ -22,12 +22,12 @@
       </div>
       <div class="flex flex-col gap-[6.25rem]">
 
-        <div class="mt-24 md:mt-[12.5rem] text-white text-center  flex flex-col justify-center items-center">
+        <div class="mt-24  text-white text-center  flex flex-col justify-center items-center">
 
-          <h2 class="headings !text-center text-text-misc max-w-[67.875rem]">
+          <h2 class="headings !text-center text-text-misc leading-normal max-w-[67.875rem]">
             Generate ad concepts and designs that boost sales and save time
           </h2>
-          <p class="max-w-[67.875rem]">
+          <p class="max-w-[67.875rem] leading-normal text-sm md:text-[1.125rem]  font-sans mt-[1.25rem]">
             This decade, everything in Digital Marketing is optimized by Artificial Intelligence, except the concepts and
             designs. Growecom.io’s has changed that, by making available accessible ad concepts that are data-backed.
           </p>
@@ -90,7 +90,7 @@
             </div>
           </div>
         </div>
-<div class="mt-12 md:mt-[5.12rem] mx-auto flex flex-col items-center gap-2 text-white">
+<div class="mt-12 mx-auto flex flex-col items-center gap-2 text-white">
   <CommonButton background="bg-text-misc"/>
   <p>Try 100% free for 7 days. <span class="text-text-misc">
 

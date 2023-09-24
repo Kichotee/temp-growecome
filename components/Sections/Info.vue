@@ -1,20 +1,20 @@
 <template>
   <div class="margin px-[8rem]">
-    <div class="container mx-auto pt-[10rem] flex flex-col gap-[6.25rem]">
+    <div class="container mx-auto pt-[10rem]  flex flex-col gap-[6.25rem]">
       <p class="headings !text-center   text-text-misc">Explore how our AI works</p>
-      <div class="flex flex-col relative text-white gap-16 md:gap-[15.06rem]">
+      <div class="flex flex-col relative max-w-[69.8152rem] mx-auto text-white gap-16 md:gap-[15.06rem]">
         <div v-for="item, index in features" :key="item.text">
-          <div class="flex xl:flex-wrap gap-8 xl:gap-0 justify-between items-center">
-            <div class=" max-w-[29rem]">
+          <div class="flex xl:flex-wrap gap-8 justify-between items-center">
+            <div class=" max-w-[26rem]">
               <h2 class="text-text-misc text-center md:text-left mb-1 font-sec">
                 {{ item.heading }}
               </h2>
-              <p class="font-sans text-sm text-center md:text-left md:text-base">
+              <p class="text-sm md:text-[1.125rem]  leading-normal font-sans text-center md:text-left ">
 
                 {{ item.text }}
               </p>
             </div>
-            <i class="relative  hidden xl:block bg-black md:-translate-x-[4.75rem] z-[20]">
+            <i class="relative max-w-[7.5rem]  hidden xl:block bg-black md:-translate-x-[.75rem] z-[20]">
 
               <svg xmlns="http://www.w3.org/2000/svg" width="104" height="118" viewBox="0 0 104 118" fill="none">
                 <path
@@ -27,12 +27,12 @@
 
 
             </i>
-            <div class="mx-auto md:mx-0">
-              <img class="md:max-w-[19.32rem] max-w-[12rem] " :src="item.image" alt="">
+            <div class=" ml-[7.6rem]">
+              <img class="md:max-w-[19.5rem] max-w-[12rem] " :src="item.image" alt="">
             </div>
           </div>
         </div>
-        <div class="absolute md:left-1/2 hidden  h-full flex-col xl:flex justify-between  -translate-x-1/2">
+        <div class="absolute md:left-1/2 -translate-x-[1.3rem]  hidden  h-full flex-col xl:flex justify-between ">
           <div v-for="item in 4" :key="item" class="basis-1/4 " :class="item === 1 && 'mt-24'">
 
             <div :class="[item === 4 && 'hidden',item===3 && 'h-[43%]']"

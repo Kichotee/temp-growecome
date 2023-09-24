@@ -7,11 +7,11 @@
           Rave Reviews: Growecom in action
         </h2>
         <div class="">
-          <div class="flex flex-wrap lg:flex-nowrap gap-6 md:gap-[2rem]">
+          <div class="flex flex-wrap justify-center lg:flex-nowrap gap-6 md:gap-[2rem]">
 
 
             <div
-              class=" max-w-max border px-8 pt-[2.38rem] pb-[3.08rem] flex flex-col gap-[1.68rem] shadow-md rounded-[.625rem]"
+              class=" max-w-max border px-8 py-[1.88rem] flex flex-col gap-[1.68rem] shadow-md rounded-[.625rem]"
               v-for="item in testimonialData" :key="item.author">
               <div class="basis-1/5">
                 <img :src="item.comapnylogo" alt="w">
@@ -21,13 +21,16 @@
                   {{ item.text }}
                 </blockquote>
               </div>
-              <div class="flex  gap-[0.62rem]">
-                <div class="p-2 bg-gray-200 rounded-xl">
+              <div class="flex items-center text-text-blue gap-[0.62rem]">
+                <div class="p-2 shadow-xl bg-gray-200 rounded-xl">
 
-                  <img :src="item.imgUrl" class="max-w-[3.625rem]" alt="">
+                  <img :src="item.imgUrl" class="max-w-[6rem]" alt="">
                 </div>
                 <div class="">
-                  <p class="font-['Baloo_Bhai_2'] md:text-[1.5rem]">
+                  <p class="font-['Baloo_Bhai_2'] font-bold leading-normal md:text-[1.5rem]">
+                    {{ item.author }}
+                  </p>
+                  <p class="font-sans leading-normal  md:text-[1rem]">
                     {{ item.author }}
                   </p>
                  
