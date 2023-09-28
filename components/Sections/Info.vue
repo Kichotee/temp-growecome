@@ -4,7 +4,7 @@
       <p class="headings !text-center   text-text-misc">Explore how our AI works</p>
       <div class="flex flex-col relative max-w-[69.8152rem] mx-auto text-white gap-16 md:gap-[15.06rem]">
         <div v-for="item, index in features" :key="item.text">
-          <div class="flex xl:flex-wrap gap-8 justify-between items-center">
+          <div class="flex flex-wrap gap-8 justify-center md:justify-between items-center">
             <div class=" max-w-[26rem]">
               <h2 class="text-text-misc text-center md:text-left mb-1 font-sec">
                 {{ item.heading }}
@@ -27,7 +27,7 @@
 
 
             </i>
-            <div class=" ml-[7.6rem]">
+            <div class=" md:ml-[7.6rem]">
               <img class="md:max-w-[19.5rem] max-w-[12rem] " :src="item.image" alt="">
             </div>
           </div>

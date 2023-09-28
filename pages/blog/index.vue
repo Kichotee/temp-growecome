@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div
-                    class="absolute left-1/2 lg:top-[26rem] p-2 text-center md:text-left  md:-bottom-[18rem] rounded-lg -translate-x-1/2 -bottom-28  ">
+                    class="absolute left-1/2 lg:top-[26rem] p-2 text-center md:text-left  md:-bottom-[18rem] rounded-lg -translate-x-1/2 -bottom-36  ">
                     <div class="bg-white py-6 px-4 ">
 
                         <h2 class="text-base px-4 md:text-[1.25rem] font-semibold text-center xl:text-left leading-[125%]">
@@ -61,7 +61,7 @@
                 </div>
             </div>
         </div>
-        <div class="mt-36 md:mt-[18.69rem]  margin">
+        <div class="mt-44 md:mt-[18.69rem]  margin">
             <p class="text-sm md:text-xl text-center font-semibold max-w-[68rem] mx-auto text-white">
                 Stay updated with our blog, where industry experts share insights, strategies, and innovative approaches to
                 supercharge your marketing efforts. Discover fresh perspectives and actionable tips for success.

@@ -385,7 +385,7 @@ module.exports = {
     },
     fontFamily: {
       sans: [
-        'Manrope',
+        '"Manrope"',
         'ui-sans-serif',
         'system-ui',
         '-apple-system',

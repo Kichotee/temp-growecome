@@ -18,7 +18,7 @@
                     </div>
                 </div>
                 <div
-                    class="absolute left-1/2 2xl:top-[28rem] p-2  rounded-lg -translate-x-1/2 bottom-36 md:-bottom-[12rem]">
+                    class="absolute img-box left-1/2 2xl:top-[28rem] p-2  rounded-lg -translate-x-1/2 bottom-0 md:-bottom-[12rem]">
                     <img src="/images/features-image.png " class="max-w-[18rem] md:max-w-[41rem]" alt="">
                 </div>
             </div>
@@ -241,4 +241,17 @@ const testimonialData = [
 ]
 </script>
 
-<style scoped></style>
+<style scoped>
+@media screen and ( max-width: 415px)  {
+    
+    .img-box{
+        bottom: 12rem;
+    }
+}
+@media screen and ( max-width: 376px)  {
+    
+    .img-box{
+        bottom: -2rem;
+    }
+}
+</style>
